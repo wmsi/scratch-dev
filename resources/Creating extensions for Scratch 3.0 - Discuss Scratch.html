@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://scratch.mit.edu/discuss/topic/277217/?page=1#post-2957532 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"><script type="text/javascript" async="" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/ga.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"1c6ed9743c","agent":"","transactionName":"M1IHN0NYXEZWAEFRCgoYIxZfWkZcWA0aXA8FWQIMU1ttU1gRQFVLEl4AFEIDQV1YFGpMChReBg==","applicationID":"2845391","errorBeacon":"bam.nr-data.net","applicationTime":188}</script>
+     
+    <meta name="google-site-verification" content="m_3TAXDreGTFyoYnEmU9mcKB4Xtw5mw6yRkuJtXRKxM">
+    <title>Creating extensions for Scratch 3.0 - Discuss Scratch</title>
+    
+    <link rel="stylesheet" href="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/jquery.ui.all.css">
+    
+        <link href="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/main.css" rel="stylesheet" type="text/css">
+   
+   <link rel="stylesheet" href="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/handheld.css" media="handheld, only screen and (max-device-width:480px)">
+
+    
+    <!-- base forum css styles -->
+    <link href="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/base.css" rel="stylesheet">
+    <!-- Forum theme colour scheme -->
+    <link href="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/default_cs.css" rel="stylesheet">
+    <link href="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/style.css" rel="stylesheet">
+    <!-- Highlightjs goodies -->
+    <link href="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/pygments.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/underscore-min.js"></script>
+    
+    <script>
+      window.console||(window.console={log:$.noop,error:$.noop,debug:$.noop}); // ensure console fails gracefully when missing
+      // define _gaq here to log errors with GA. ga.js script gets loaded furthe down
+      var sessionCookieName = 'scratchsessionsid';
+      var _gaq = window._gaq || [];
+      _gaq.push(['_setAccount', 'UA-30688952-1']);
+      _gaq.push(['_setSampleRate', '10']);
+      _gaq.push(['_trackPageview']);
+      
+      
+      
+      
+
+      
+    </script>
+    <script type="text/javascript">
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        function setCookie(name, value, days) {
+            var expires;
+
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toGMTString();
+            } else {
+                expires = "";
+            }
+            document.cookie = escape(name) + "=" + escape(value) + expires + "; path=/";
+        }
+    </script>
+    
+    <script>
+      
+
+var Scratch = Scratch || {};
+Scratch.INIT_DATA = Scratch.INIT_DATA || {};
+
+
+
+Scratch.INIT_DATA.ADMIN = false;
+Scratch.INIT_DATA.LOGGED_IN_USER = {
+  
+  options: {
+     
+    
+  }
+};
+Scratch.INIT_DATA.comment_posting = true;
+
+Scratch.INIT_DATA.BROWSERS_SUPPORTED = {
+
+  chrome: 35,
+  firefox: 31,
+  msie: 8,
+  safari: 7
+};
+
+Scratch.INIT_DATA.TEMPLATE_CUES = {
+
+  unsupported_browser: true,
+  welcome: true,
+  confirmed_email: false
+};
+  
+
+
+
+
+
+
+Scratch.INIT_DATA.IS_IP_BANNED = false;
+
+Scratch.INIT_DATA.GLOBAL_URLS = {
+  'media_url': '//uploads.scratch.mit.edu/',
+  'static_url': '//cdn.scratch.mit.edu/scratchr2/static/__650bcb4a1188252b4cb93cd3acf827d7__/',
+  'static_path': '/scratchr2/static/__650bcb4a1188252b4cb93cd3acf827d7__/'
+}
+
+Scratch.INIT_DATA.IS_SOCIAL = false;
+
+Scratch.ALERT_MSGS = {
+  'error': 'Oops! Something went wrong',
+  'inappropriate-generic': 'Hmm...the bad word detector thinks there is a problem with your text. Please change it and remember to <a target="_blank" href="/community_guidelines/">be respectful</a>.',
+  'image-invalid': 'Upload a valid image. The file you uploaded was either not an image or a corrupted image.',
+  'thumbnail-missing': 'Missing file',
+  'thumbnail-upload-bad': 'Bad upload',
+  'thumbnail-too-large': 'Maximum file size is 1 MB.',
+
+  'inappropriate-comment': 'Hmm...the bad word detector thinks there is a problem with your comment. Please change it and remember to <a target="_blank" href="/community_guidelines/">be respectful</a>.',
+  'comment-has-chat-site': 'Uh oh! This comment contains a link to a website with unmoderated chat. For safety reasons, please do not link to these sites!',
+
+  'empty-comment': "You can't post an empty comment!",
+  'delete_comment': '<div title="Delete Comment?"><p>Are you sure you want to delete this comment? If the comment is mean or disrespectful, please click report instead, to let the Scratch Team know about it.</p></div>',
+  'report_comment': '<div title="Report Comment?"></p>Are you sure you want to report this comment?</p></div>',
+  'report_comment_educator': '<div title="Delete Comment?"></p>Are you sure you want to delete this comment?</p></div>',
+  'followed': 'You are now following ',
+  'unfollowed': 'You are no longer following ',
+  'comment-spam': "Hmm, seems like you've posted the same comment a bunch of times. Please don't spam.",
+  'comment-flood': "Woah, seems like you're commenting really quickly. Please wait longer between posts.",
+  'comment-muted': "Hmm, the filterbot is pretty sure your recent comments weren't ok for Scratch, so your account has been muted for the rest of the day. :/",
+  'comment-unconstructive': "Hmm, the filterbot thinks your comment may be mean or disrespectful. Remember, most projects on Scratch are made by people who are just learning how to program. Read the <a href='/community_guidelines'>community guidelines</a>, and be nice.",
+  'comment-disallowed': "Hmm, it looks like comments have been turned off for this page. :/",
+  'project-complaint-length': "That's too short. Please describe in detail what's inappropriate or disrespectful about the project.",
+  'project-complaint-buglength': "That's too short! Please describe in detail what you expected the project to do, and how exactly it is broken. Thanks!",
+  'editable-text-too-long': "That's too long! Please find a way to shorten your text."
+
+}
+
+
+    </script>
+    
+
+    <meta property="og:type" content="website">
+    
+    <meta property="og:description" content="Make games, stories and interactive art with Scratch. (scratch.mit.edu)">
+    
+
+    
+    <meta property="og:title" content="Scratch - Imagine, Program, Share">
+    <meta property="og:url" content="https://scratch.mit.edu/discuss/topic/277217/?page=1">
+    
+
+  <style><![CDATA[.sb-label{font-family:Lucida Grande,Verdana,Arial,DejaVu Sans,sans-serif;font-weight:700;fill:#fff;font-size:10px;word-spacing:+1px}.sb-obsolete{fill:#d42828}.sb-motion{fill:#4a6cd4}.sb-looks{fill:#8a55d7}.sb-sound{fill:#bb42c3}.sb-pen{fill:#0e9a6c}.sb-events{fill:#c88330}.sb-control{fill:#e1a91a}.sb-sensing{fill:#2ca5e2}.sb-operators{fill:#5cb712}.sb-variables{fill:#ee7d16}.sb-list{fill:#cc5b22}.sb-custom{fill:#632d99}.sb-custom-arg{fill:#5947b1}.sb-extension{fill:#4b4a60}.sb-grey{fill:#969696}.sb-bevel{filter:url(#bevelFilter)}.sb-input{filter:url(#inputBevelFilter)}.sb-input-number,.sb-input-number-dropdown,.sb-input-string{fill:#fff}.sb-literal-dropdown,.sb-literal-number,.sb-literal-number-dropdown,.sb-literal-string{font-weight:400;font-size:9px;word-spacing:0}.sb-literal-number,.sb-literal-number-dropdown,.sb-literal-string{fill:#000}.sb-darker{filter:url(#inputDarkFilter)}.sb-outline{stroke:#fff;stroke-opacity:.2;stroke-width:2;fill:none}.sb-define-hat-cap{stroke:#632d99;stroke-width:1;fill:#8e2ec2}.sb-comment{fill:#ffffa5;stroke:#d0d1d2;stroke-width:1}.sb-comment-line{fill:#ffff80}.sb-comment-label{font-family:Helevetica,Arial,DejaVu Sans,sans-serif;font-weight:700;fill:#5c5d5f;word-spacing:0;font-size:12px}]]></style></head>
+
+  <body class="">
+  <!--[if lte IE 8]>
+  <div class="unsupported-browser banner" data-cue="unsupported_browser">
+    <div class="container">
+      <span>Scratch supports Internet Explorer 9+. We suggest you upgrade to <a href="/info/faq/#requirements">a supported browser</a>, <a href="/scratch2download/">download the offline editor</a>, or <a href="https://en.scratch-wiki.info/wiki/List_of_Bug_Workarounds">read about common workarounds</a>.</span>
+    </div>
+  </div>
+  <![endif]-->
+    <div id="pagewrapper">
+      
+      
+      <div id="topnav">
+      <div class="innerwrap">
+        <div class="container">
+          <a href="https://scratch.mit.edu/" class="logo"><span class="scratch"></span></a>
+          <ul class="site-nav">
+            <li><a id="project-create" href="https://scratch.mit.edu/projects/editor/?tip_bar=home">Create</a></li><li><a href="https://scratch.mit.edu/explore/projects/all">Explore</a></li><li><a href="https://scratch.mit.edu/tips">Tips</a></li><li class="last"><a href="https://scratch.mit.edu/about/">About</a></li>
+          </ul>
+          
+          <form class="search" action="https://scratch.mit.edu/search/projects" method="get">
+            <input type="submit" class="glass" value="">
+            
+	          <input id="search-input" type="text" placeholder="Search" name="q">
+          </form>
+          
+          
+          <ul class="account-nav">
+              <li class="join-scratch" data-control="registration"><span class=""><span>Join Scratch</span></span></li><li id="login-dropdown" class="sign-in dropdown"><span data-toggle="dropdown" class="dropdown-toggle"><span>Sign in</span></span><div class="popover bottom dropdown-menu"><div class="arrow"></div><div class="popover-content"><form method="post" id="login" action="https://scratch.mit.edu/discuss/topic/277217/?page=1#"><label for="username">Username</label><input type="text" id="login_dropdown_username" name="username" maxlength="30" class="wide username" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;);"><label for="password" class="password">Password</label><input type="password" name="password" class="wide password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;);"><div class="ajax-loader" style="display:none; float: left;"></div><button type="submit">Sign in</button><span class="forgot-password"><a href="https://scratch.mit.edu/accounts/password_reset/">Need help?</a></span><div class="error"></div></form></div></div></li><li data-control="modal-login" class="sign-in mobile"><span>Sign in</span></li>
+          </ul>
+          
+          <script type="text/template" id="template-account-nav-logged-out">
+          <ul class="account-nav" >
+              <li class="join-scratch" data-control="registration"><span class=""><span>Join Scratch</span></span></li><li id="login-dropdown" class="sign-in dropdown"><span data-toggle="dropdown" class="dropdown-toggle"><span>Sign in</span></span><div class="popover bottom dropdown-menu"><div class="arrow"></div><div class="popover-content" ><form method="post" id="login" action="#"><label for="username">Username</label><input type="text" id="login_dropdown_username" name="username" maxlength="30" class="wide username" /><label for="password" class="password">Password</label><input type="password" name="password" class="wide password" /><div class="ajax-loader" style="display:none; float: left;"></div><button type="submit">Sign in</button><span class="forgot-password"><a href="/accounts/password_reset/">Need help?</a></span><div class="error"></div></form></div></div></li><li data-control="modal-login" class="sign-in mobile"><span>Sign in</span></li>
+          </ul>
+          </script>
+          <script type="text/template" id="template-account-nav-logged-in">
+          <ul class="account-nav logged-in"><li class="messages"><a title="messages - updates and notices" href="/messages" class="messages-icon"><span class="notificationsCount none">0</span></a></li><li class="my-stuff"><a title="my stuff - manage projects and studios" href="/mystuff/" class="mystuff-icon"></a></li><li class="logged-in-user dropdown"><span class="user-name dropdown-toggle" data-toggle="dropdown"><img class="user-icon" src="<%- LOGGED_IN_USER.model.thumbnail_url %>" width="24" height="24"><%- LOGGED_IN_USER.model.username_truncated %><span class="caret"></span></span><div class="dropdown-menu blue" ><ul class="user-nav"><li><a href="<%- LOGGED_IN_USER.model.profile_url %>">Profile</a></li><li><a href="/mystuff/">My Stuff</a></li><% if (LOGGED_IN_USER.model.is_educator){ %><li><a href="/educators/classes/">My Classes</a></li><% } %><% if (LOGGED_IN_USER.model.is_student){ %><li><a href="/classes/<%- LOGGED_IN_USER.model.classroom_id %>/">My Class</a></li><% } %><li><a href="/accounts/settings/">Account settings</a></li><li id="logout" class="logout divider"><form method="post" action="/accounts/logout/"><input type='hidden' name='csrfmiddlewaretoken' value='PGzYXKwkq4AzmXtNoYTQdJ27rfaGjZZp' /><input type="submit" value="Sign out"></form></li></ul></div></li></ul>
+          </script>
+          <script type="text/javascript" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/account-nav.js"></script>
+        </div>
+        <iframe class="iframeshim" frameborder="0" scrolling="no" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/saved_resource.html"><html><head></head><body></body></html></iframe>
+      </div><!-- innerwrap -->
+      </div>
+        
+
+      <div class="confirm-email banner" data-cue="confirmed_email" style="display:none;">
+        <div class="container">
+          
+          <span><a id="confirm-email-popup" href="https://scratch.mit.edu/discuss/topic/277217/?page=1#">Confirm your email</a> to enable sharing. <a href="https://scratch.mit.edu/help/faq/#accounts">Having trouble?</a></span>
+          <div class="close">x</div>
+        </div>
+      </div>
+
+        
+        <div class="container" id="content">
+        <div id="alert-view"></div>
+        
+    
+
+
+
+<div id="djangobbwrap">
+<div id="djangobbindex" class="djangobb">
+<div id="brdheader" class="box">
+	<div class="box-head">
+		<h2><!--<span><a href="/discuss/">-->Discuss Scratch<!--</a></span>--></h2>
+		<p><span></span></p>
+	</div>
+	<div id="brdmenu" class="box-content">
+		
+		<ul>
+		
+			<li id="navindex"><a href="https://scratch.mit.edu/discuss/">Discussion Home</a></li>
+			<li id="navsearch"><a href="https://scratch.mit.edu/discuss/search/">Search</a></li>
+			
+		
+		</ul>
+	</div>
+</div>
+
+
+
+
+    
+        
+    
+
+    
+
+<div class="linkst">
+    
+        <div class="follow-topic top">
+            <img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/ajax-loader.gif" class="loading" style="display: none;" alt="loading...">
+            <p class="error" style="display: none;">There was an error :( Try again?</p>
+            <form method="post" action="https://scratch.mit.edu/discuss/subscription/topic/277217/add/">
+                <input type="hidden" name="csrfmiddlewaretoken" value="PGzYXKwkq4AzmXtNoYTQdJ27rfaGjZZp">
+                <button type="submit" class="follow-button button blue" title="">Follow Discussion</button>
+            </form>
+            <form method="post" action="https://scratch.mit.edu/discuss/subscription/topic/277217/delete/">
+                <input type="hidden" name="csrfmiddlewaretoken" value="PGzYXKwkq4AzmXtNoYTQdJ27rfaGjZZp">
+                <button type="submit" style="display: none;" class="unfollow-button button grey" title="Stop getting messages about new posts to this discussion">Unfollow Discussion</button>
+            </form>
+        </div>
+    
+
+    
+
+<div class="pagination">
+    
+        <span class="disabled prev">‹‹ previous</span>
+    
+    
+        
+            
+                <span class="current page">1</span>
+            
+        
+    
+        
+            
+                <a href="https://scratch.mit.edu/discuss/topic/277217/?page=2" class="page">2</a>
+            
+        
+    
+        
+            
+                <a href="https://scratch.mit.edu/discuss/topic/277217/?page=3" class="page">3</a>
+            
+        
+    
+        
+            
+                <a href="https://scratch.mit.edu/discuss/topic/277217/?page=4" class="page">4</a>
+            
+        
+    
+    
+        <a href="https://scratch.mit.edu/discuss/topic/277217/?page=2" class="next">next ››</a>
+    
+</div>
+
+
+
+    <ul>
+        <li>
+        <a href="https://scratch.mit.edu/discuss/">Discussion Forums</a> </li><li>» <a href="https://scratch.mit.edu/discuss/48/">Developing Scratch Extensions</a> </li><li>» Creating extensions for Scratch 3.0
+        <a href="https://scratch.mit.edu/discuss/feeds/topic/277217/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/feed-icon-small.png" alt="[RSS Feed]" title="[RSS Feed]" class="breadcrumb_rss"></a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+    <div id="p2832219" class="blockpost roweven firstpost">
+        <a name="post-2832219"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#1</span><a href="https://scratch.mit.edu/discuss/post/2832219/">Sept. 20, 2017 15:31:05</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/NitroCipher/">NitroCipher</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/NitroCipher/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/9981676_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							500+ posts
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html"><span class="bb-big"><span class="bb-bold">With the upcoming Scratch 3.0, the extension structure has been completely revamped.</span></span><br><span class="bb-bold"><br>What we know:</span><br><ul><li> Extensions are still using javascript<br></li><li> Block are now defined by<br><div class="code"><pre>            <span class="p">{</span>
+                <span class="nx">opcode</span><span class="o">:</span> <span class="s1">'example-noop'</span><span class="p">,</span>
+                <span class="nx">blockType</span><span class="o">:</span> <span class="nx">Scratch</span><span class="p">.</span><span class="nx">BlockType</span><span class="p">.</span><span class="nx">COMMAND</span><span class="p">,</span>
+                <span class="nx">blockAllThreads</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="nx">text</span><span class="o">:</span> <span class="s1">'do nothing'</span><span class="p">,</span>
+                <span class="nx">func</span><span class="o">:</span> <span class="s1">'noop'</span>
+            <span class="p">},</span>
+</pre></div>rather than<br><div class="code"><pre><span class="p">[</span><span class="s1">' '</span><span class="p">,</span> <span class="s1">'do nothing'</span><span class="p">,</span> <span class="s1">'noop'</span><span class="p">,</span> <span class="s2">""</span><span class="p">]</span>
+</pre></div></li><li>Extensions now have built in translation support<br><div class="code"><pre><span class="nx">translation_map</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">de</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s1">'extensionName'</span><span class="o">:</span> <span class="s1">'Einige Blöcke'</span><span class="p">,</span>
+                <span class="s1">'myReporter'</span><span class="o">:</span> <span class="s1">'Buchstabe [LETTER_NUM] von [TEXT]'</span><span class="p">,</span>
+                <span class="s1">'myReporter.TEXT_default'</span><span class="o">:</span> <span class="s1">'Text'</span><span class="p">,</span>
+                <span class="s1">'menuA_item1'</span><span class="o">:</span> <span class="s1">'Artikel eins'</span><span class="p">,</span>
+                <span class="c1">// Dynamic menus can be translated too</span>
+                <span class="s1">'menuB_example'</span><span class="o">:</span> <span class="s1">'Beispiel'</span><span class="p">,</span>
+                <span class="c1">// This message contains ICU placeholders (see `myReporter()` below)</span>
+                <span class="s1">'myReporter.result'</span><span class="o">:</span> <span class="s1">'Buchstabe {LETTER_NUM} von {TEXT} ist {LETTER}.'</span>
+            <span class="p">},</span>
+            <span class="nx">it</span><span class="o">:</span> <span class="p">{</span>
+                <span class="c1">// ...</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+</pre></div></li><li>You can define where the blocks will appear (IE just the stage or just sprites)<br><div class="code"><pre>                <span class="c1">// Optional: list of target types for which this block should appear.</span>
+                <span class="c1">// If absent, assume it applies to all builtin targets -- that is:</span>
+                <span class="c1">// ['sprite', 'stage']</span>
+                <span class="nx">filter</span><span class="o">:</span> <span class="p">[</span><span class="s1">'someBlocks.wedo2'</span><span class="p">,</span> <span class="s1">'sprite'</span><span class="p">,</span> <span class="s1">'stage'</span><span class="p">]</span>
+            <span class="p">},</span>
+</pre></div></li><li>Menus are now defined:<br><div class="code"><pre><span class="kr">const</span> <span class="nx">ColorParam</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">COLOR</span><span class="o">:</span> <span class="s1">'color'</span><span class="p">,</span>
+    <span class="nx">SATURATION</span><span class="o">:</span> <span class="s1">'saturation'</span><span class="p">,</span>
+    <span class="nx">BRIGHTNESS</span><span class="o">:</span> <span class="s1">'brightness'</span><span class="p">,</span>
+    <span class="nx">TRANSPARENCY</span><span class="o">:</span> <span class="s1">'transparency'</span>
+<span class="p">};</span>
+</pre></div></li></ul><br><br>Please help contribute to this thread, check out <a href="https://github.com/LLK/scratch-vm/tree/develop/src/extensions">the github</a> to help deconstruct the new format.<br><span class="bb-small">(more updates will be posted later)</span></div>
+                        
+                            <p class="postedit"><em class="posteditmessage">Last edited by NitroCipher (Jan. 8, 2018 18:21:14)</em></p>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                I hope my post helped you in some way!  <span class="bb-bold"><span class="bb-small">Post count: 400+</span></span><br><br><pre class="blocks"><div class="scratchblocks"><svg version="1.1" width="591" height="25"><defs><filter id="bevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputBevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputDarkFilter" x0="-50%" y0="-50%" width="200%" height="200%"><feflood result="flood-1" in="undefined" flood-color="#000" flood-opacity="0.2"></feflood><fecomposite result="comp-2" operator="in" in="flood-1" in2="SourceAlpha"></fecomposite><femerge result="merge-3"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-2"></femergenode></femerge></filter><path d="M1.504 21L0 19.493 4.567 0h1.948l-.5 2.418s1.002-.502 3.006 0c2.006.503 3.008 2.01 6.517 2.01 3.508 0 4.463-.545 4.463-.545l-.823 9.892s-2.137 1.005-5.144.696c-3.007-.307-3.007-2.007-6.014-2.51-3.008-.502-4.512.503-4.512.503L1.504 21z" fill="#3f8d15" id="greenFlag"></path><path d="M6.724 0C3.01 0 0 2.91 0 6.5c0 2.316 1.253 4.35 3.14 5.5H5.17v-1.256C3.364 10.126 2.07 8.46 2.07 6.5 2.07 4.015 4.152 2 6.723 2c1.14 0 2.184.396 2.993 1.053L8.31 4.13c-.45.344-.398.826.11 1.08L15 8.5 13.858.992c-.083-.547-.514-.714-.963-.37l-1.532 1.172A6.825 6.825 0 0 0 6.723 0z" fill="#fff" id="turnRight"></path><path d="M3.637 1.794A6.825 6.825 0 0 1 8.277 0C11.99 0 15 2.91 15 6.5c0 2.316-1.253 4.35-3.14 5.5H9.83v-1.256c1.808-.618 3.103-2.285 3.103-4.244 0-2.485-2.083-4.5-4.654-4.5-1.14 0-2.184.396-2.993 1.053L6.69 4.13c.45.344.398.826-.11 1.08L0 8.5 1.142.992c.083-.547.514-.714.963-.37l1.532 1.172z" fill="#fff" id="turnLeft"></path><path d="M0 0L4 4L0 8Z" fill="#111" id="addInput"></path><path d="M4 0L4 8L0 4Z" fill="#111" id="delInput"></path><g id="loopArrow"><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#000" opacity="0.3"></path><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#fff" opacity="0.9" transform="translate(-1 -1)"></path></g></defs><g><g transform="translate(0 0)"><g transform="translate(2 0)"><path d="M 0 3 L 3 0 L 13 0 L 16 3 L 24 3 L 27 0 L 296 0 L 299 3 L 299 19 L 296 22 L 27 22 L 24 25 L 16 25 L 13 22 L 3 22 L 0 19 Z" class="sb-extension sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(6 5)">Current</text><text x="0" y="10" class="sb-label " transform="translate(49 5)">project:</text><g transform="translate(91 4)"><rect x="0" y="0" width="202" height="14" class="sb-input sb-input-string"></rect><text x="0" y="10" class="sb-label sb-literal-string" transform="translate(4 0)">s3Blocks: scratchblocks rewritten for Scratch 3.0</text></g></g><g transform="translate(313 1)"><rect x="0" y="0" width="12" height="2" class="sb-comment-line" transform="translate(-12 9)"></rect><path d="M 6 0 L 268 0 A 6 6 0 0 1 274 6 L 274 14 A 6 6 0 0 1 268 20 L 6 20 A 6 6 0 0 1 0 14 L 0 6 A 6 6 0 0 1 6 0 Z" class="sb-comment"></path><text x="0" y="10" class="sb-label sb-comment-label" transform="translate(8 4)">https://scratch.mit.edu/discuss/topic/290031/</text></g></g></g></svg></div></pre><span class="bb-small"><span class="bb-small"><span style="color:#ffffff">This is my signature identifier “aWFtbml0cm9jaXBoZXI=”</span></span></span><br><span class="bb-italic"></span>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2832397" class="blockpost roweven firstpost">
+        <a name="post-2832397"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#2</span><a href="https://scratch.mit.edu/discuss/post/2832397/">Sept. 20, 2017 19:10:10</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/savaka/">savaka</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/savaka/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/691522_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							1000+ posts
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html">Looks a lot easier to understand</div>
+                        
+                            <p class="postedit"><em class="posteditmessage">Last edited by savaka (Sept. 20, 2017 19:10:14)</em></p>
+                        
+                        
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2832602" class="blockpost roweven firstpost">
+        <a name="post-2832602"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#3</span><a href="https://scratch.mit.edu/discuss/post/2832602/">Sept. 20, 2017 22:24:47</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/Abe_Lincoln/">Abe_Lincoln</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/Abe_Lincoln/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/17721199_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							41  posts
+							
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html"><blockquote><p class="bb-quote-author">savaka wrote:</p>Looks a lot easier to understand</blockquote>Yes, but a lot longer than a <span class="bb-bold">simple</span> line of JSON. It just means all extensions will have to be updated. Maybe I should build a converter that does that.</div>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                <div style="text-align:center;"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/R9ggmS.png"></div>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2834316" class="blockpost roweven firstpost">
+        <a name="post-2834316"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#4</span><a href="https://scratch.mit.edu/discuss/post/2834316/">Sept. 22, 2017 18:08:20</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/aqmoreira/">aqmoreira</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/aqmoreira/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/default_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						New to Scratch
+						
+						<br>
+						
+							1 post 
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html">Hi NitroCipher,<br><br>I'm playing with scratch 3 and found this post. Can you tell me where I can find more information to make a Command button that in the arguments values ​​come from a menu or array.<br><br>Samples: <br><pre class="blocks"><div class="scratchblocks"><svg version="1.1" width="116" height="25"><defs><filter id="bevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputBevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputDarkFilter" x0="-50%" y0="-50%" width="200%" height="200%"><feflood result="flood-1" in="undefined" flood-color="#000" flood-opacity="0.2"></feflood><fecomposite result="comp-2" operator="in" in="flood-1" in2="SourceAlpha"></fecomposite><femerge result="merge-3"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-2"></femergenode></femerge></filter><path d="M1.504 21L0 19.493 4.567 0h1.948l-.5 2.418s1.002-.502 3.006 0c2.006.503 3.008 2.01 6.517 2.01 3.508 0 4.463-.545 4.463-.545l-.823 9.892s-2.137 1.005-5.144.696c-3.007-.307-3.007-2.007-6.014-2.51-3.008-.502-4.512.503-4.512.503L1.504 21z" fill="#3f8d15" id="greenFlag"></path><path d="M6.724 0C3.01 0 0 2.91 0 6.5c0 2.316 1.253 4.35 3.14 5.5H5.17v-1.256C3.364 10.126 2.07 8.46 2.07 6.5 2.07 4.015 4.152 2 6.723 2c1.14 0 2.184.396 2.993 1.053L8.31 4.13c-.45.344-.398.826.11 1.08L15 8.5 13.858.992c-.083-.547-.514-.714-.963-.37l-1.532 1.172A6.825 6.825 0 0 0 6.723 0z" fill="#fff" id="turnRight"></path><path d="M3.637 1.794A6.825 6.825 0 0 1 8.277 0C11.99 0 15 2.91 15 6.5c0 2.316-1.253 4.35-3.14 5.5H9.83v-1.256c1.808-.618 3.103-2.285 3.103-4.244 0-2.485-2.083-4.5-4.654-4.5-1.14 0-2.184.396-2.993 1.053L6.69 4.13c.45.344.398.826-.11 1.08L0 8.5 1.142.992c.083-.547.514-.714.963-.37l1.532 1.172z" fill="#fff" id="turnLeft"></path><path d="M0 0L4 4L0 8Z" fill="#111" id="addInput"></path><path d="M4 0L4 8L0 4Z" fill="#111" id="delInput"></path><g id="loopArrow"><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#000" opacity="0.3"></path><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#fff" opacity="0.9" transform="translate(-1 -1)"></path></g></defs><g><g transform="translate(0 0)"><g transform="translate(2 0)"><path d="M 0 3 L 3 0 L 13 0 L 16 3 L 24 3 L 27 0 L 109 0 L 112 3 L 112 19 L 109 22 L 27 22 L 24 25 L 16 25 L 13 22 L 3 22 L 0 19 Z" class="sb-motion sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(6 5)">point</text><text x="0" y="10" class="sb-label " transform="translate(37 5)">towards</text><g transform="translate(82 4)"><g width="24" height="14" class="sb-input sb-input-dropdown"><rect x="0" y="0" width="24" height="14" class="sb-motion sb-darker"></rect></g><text x="0" y="10" class="sb-label sb-literal-dropdown" transform="translate(4 0)"></text><polygon points="7 0 3.5 4 0 0" fill="#000" opacity="0.6" transform="translate(14 5)"></polygon></g></g></g></g></svg></div></pre><br><br>Thanks,<br><br>Allan Moreira</div>
+                        
+                        
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2834343" class="blockpost roweven firstpost">
+        <a name="post-2834343"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#5</span><a href="https://scratch.mit.edu/discuss/post/2834343/">Sept. 22, 2017 18:51:24</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/NitroCipher/">NitroCipher</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/NitroCipher/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/9981676_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							500+ posts
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html"><blockquote><p class="bb-quote-author">aqmoreira wrote:</p>Hi NitroCipher,<br><br>I'm playing with scratch 3 and found this post. Can you tell me where I can find more information to make a Command button that in the arguments values ​​come from a menu or array.<br><br>Samples: <br><pre class="blocks"><div class="scratchblocks"><svg version="1.1" width="116" height="25"><defs><filter id="bevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputBevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputDarkFilter" x0="-50%" y0="-50%" width="200%" height="200%"><feflood result="flood-1" in="undefined" flood-color="#000" flood-opacity="0.2"></feflood><fecomposite result="comp-2" operator="in" in="flood-1" in2="SourceAlpha"></fecomposite><femerge result="merge-3"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-2"></femergenode></femerge></filter><path d="M1.504 21L0 19.493 4.567 0h1.948l-.5 2.418s1.002-.502 3.006 0c2.006.503 3.008 2.01 6.517 2.01 3.508 0 4.463-.545 4.463-.545l-.823 9.892s-2.137 1.005-5.144.696c-3.007-.307-3.007-2.007-6.014-2.51-3.008-.502-4.512.503-4.512.503L1.504 21z" fill="#3f8d15" id="greenFlag"></path><path d="M6.724 0C3.01 0 0 2.91 0 6.5c0 2.316 1.253 4.35 3.14 5.5H5.17v-1.256C3.364 10.126 2.07 8.46 2.07 6.5 2.07 4.015 4.152 2 6.723 2c1.14 0 2.184.396 2.993 1.053L8.31 4.13c-.45.344-.398.826.11 1.08L15 8.5 13.858.992c-.083-.547-.514-.714-.963-.37l-1.532 1.172A6.825 6.825 0 0 0 6.723 0z" fill="#fff" id="turnRight"></path><path d="M3.637 1.794A6.825 6.825 0 0 1 8.277 0C11.99 0 15 2.91 15 6.5c0 2.316-1.253 4.35-3.14 5.5H9.83v-1.256c1.808-.618 3.103-2.285 3.103-4.244 0-2.485-2.083-4.5-4.654-4.5-1.14 0-2.184.396-2.993 1.053L6.69 4.13c.45.344.398.826-.11 1.08L0 8.5 1.142.992c.083-.547.514-.714.963-.37l1.532 1.172z" fill="#fff" id="turnLeft"></path><path d="M0 0L4 4L0 8Z" fill="#111" id="addInput"></path><path d="M4 0L4 8L0 4Z" fill="#111" id="delInput"></path><g id="loopArrow"><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#000" opacity="0.3"></path><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#fff" opacity="0.9" transform="translate(-1 -1)"></path></g></defs><g><g transform="translate(0 0)"><g transform="translate(2 0)"><path d="M 0 3 L 3 0 L 13 0 L 16 3 L 24 3 L 27 0 L 109 0 L 112 3 L 112 19 L 109 22 L 27 22 L 24 25 L 16 25 L 13 22 L 3 22 L 0 19 Z" class="sb-motion sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(6 5)">point</text><text x="0" y="10" class="sb-label " transform="translate(37 5)">towards</text><g transform="translate(82 4)"><g width="24" height="14" class="sb-input sb-input-dropdown"><rect x="0" y="0" width="24" height="14" class="sb-motion sb-darker"></rect></g><text x="0" y="10" class="sb-label sb-literal-dropdown" transform="translate(4 0)"></text><polygon points="7 0 3.5 4 0 0" fill="#000" opacity="0.6" transform="translate(14 5)"></polygon></g></g></g></g></svg></div></pre><br><br>Thanks,<br><br>Allan Moreira</blockquote><br>At the moment, not much is known (publically) about the extensions. I will post here as soon as I discover more.</div>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                I hope my post helped you in some way!  <span class="bb-bold"><span class="bb-small">Post count: 400+</span></span><br><br><pre class="blocks"><div class="scratchblocks"><svg version="1.1" width="591" height="25"><defs><filter id="bevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputBevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputDarkFilter" x0="-50%" y0="-50%" width="200%" height="200%"><feflood result="flood-1" in="undefined" flood-color="#000" flood-opacity="0.2"></feflood><fecomposite result="comp-2" operator="in" in="flood-1" in2="SourceAlpha"></fecomposite><femerge result="merge-3"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-2"></femergenode></femerge></filter><path d="M1.504 21L0 19.493 4.567 0h1.948l-.5 2.418s1.002-.502 3.006 0c2.006.503 3.008 2.01 6.517 2.01 3.508 0 4.463-.545 4.463-.545l-.823 9.892s-2.137 1.005-5.144.696c-3.007-.307-3.007-2.007-6.014-2.51-3.008-.502-4.512.503-4.512.503L1.504 21z" fill="#3f8d15" id="greenFlag"></path><path d="M6.724 0C3.01 0 0 2.91 0 6.5c0 2.316 1.253 4.35 3.14 5.5H5.17v-1.256C3.364 10.126 2.07 8.46 2.07 6.5 2.07 4.015 4.152 2 6.723 2c1.14 0 2.184.396 2.993 1.053L8.31 4.13c-.45.344-.398.826.11 1.08L15 8.5 13.858.992c-.083-.547-.514-.714-.963-.37l-1.532 1.172A6.825 6.825 0 0 0 6.723 0z" fill="#fff" id="turnRight"></path><path d="M3.637 1.794A6.825 6.825 0 0 1 8.277 0C11.99 0 15 2.91 15 6.5c0 2.316-1.253 4.35-3.14 5.5H9.83v-1.256c1.808-.618 3.103-2.285 3.103-4.244 0-2.485-2.083-4.5-4.654-4.5-1.14 0-2.184.396-2.993 1.053L6.69 4.13c.45.344.398.826-.11 1.08L0 8.5 1.142.992c.083-.547.514-.714.963-.37l1.532 1.172z" fill="#fff" id="turnLeft"></path><path d="M0 0L4 4L0 8Z" fill="#111" id="addInput"></path><path d="M4 0L4 8L0 4Z" fill="#111" id="delInput"></path><g id="loopArrow"><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#000" opacity="0.3"></path><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#fff" opacity="0.9" transform="translate(-1 -1)"></path></g></defs><g><g transform="translate(0 0)"><g transform="translate(2 0)"><path d="M 0 3 L 3 0 L 13 0 L 16 3 L 24 3 L 27 0 L 296 0 L 299 3 L 299 19 L 296 22 L 27 22 L 24 25 L 16 25 L 13 22 L 3 22 L 0 19 Z" class="sb-extension sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(6 5)">Current</text><text x="0" y="10" class="sb-label " transform="translate(49 5)">project:</text><g transform="translate(91 4)"><rect x="0" y="0" width="202" height="14" class="sb-input sb-input-string"></rect><text x="0" y="10" class="sb-label sb-literal-string" transform="translate(4 0)">s3Blocks: scratchblocks rewritten for Scratch 3.0</text></g></g><g transform="translate(313 1)"><rect x="0" y="0" width="12" height="2" class="sb-comment-line" transform="translate(-12 9)"></rect><path d="M 6 0 L 268 0 A 6 6 0 0 1 274 6 L 274 14 A 6 6 0 0 1 268 20 L 6 20 A 6 6 0 0 1 0 14 L 0 6 A 6 6 0 0 1 6 0 Z" class="sb-comment"></path><text x="0" y="10" class="sb-label sb-comment-label" transform="translate(8 4)">https://scratch.mit.edu/discuss/topic/290031/</text></g></g></g></svg></div></pre><span class="bb-small"><span class="bb-small"><span style="color:#ffffff">This is my signature identifier “aWFtbml0cm9jaXBoZXI=”</span></span></span><br><span class="bb-italic"></span>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2865359" class="blockpost roweven firstpost">
+        <a name="post-2865359"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#6</span><a href="https://scratch.mit.edu/discuss/post/2865359/">Oct. 23, 2017 01:14:40</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/JGames101/">JGames101</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/JGames101/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/15804964_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							100+ posts
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html">Ooh! Translation support!<br><div class="code"><pre><span class="nx">translation_map</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">de</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s1">'extensionName'</span><span class="o">:</span> <span class="s1">'Einige Blöcke'</span><span class="p">,</span>
+                <span class="s1">'myReporter'</span><span class="o">:</span> <span class="s1">'Buchstabe [LETTER_NUM] von [TEXT]'</span><span class="p">,</span>
+                <span class="s1">'myReporter.TEXT_default'</span><span class="o">:</span> <span class="s1">'Text'</span><span class="p">,</span>
+                <span class="s1">'menuA_item1'</span><span class="o">:</span> <span class="s1">'Artikel eins'</span><span class="p">,</span>
+                <span class="c1">// Dynamic menus can be translated too</span>
+                <span class="s1">'menuB_example'</span><span class="o">:</span> <span class="s1">'Beispiel'</span><span class="p">,</span>
+                <span class="c1">// This message contains ICU placeholders (see `myReporter()` below)</span>
+                <span class="s1">'myReporter.result'</span><span class="o">:</span> <span class="s1">'Buchstabe {LETTER_NUM} von {TEXT} ist {LETTER}.'</span>
+            <span class="p">},</span>
+            <span class="nx">it</span><span class="o">:</span> <span class="p">{</span>
+                <span class="c1">// ...</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+</pre></div>This thing is interesting - it lets you filter where your block appears (stage, sprite, both), but in the example shows another extension.<br><div class="code"><pre>                <span class="c1">// Optional: list of target types for which this block should appear.</span>
+                <span class="c1">// If absent, assume it applies to all builtin targets -- that is:</span>
+                <span class="c1">// ['sprite', 'stage']</span>
+                <span class="nx">filter</span><span class="o">:</span> <span class="p">[</span><span class="s1">'someBlocks.wedo2'</span><span class="p">,</span> <span class="s1">'sprite'</span><span class="p">,</span> <span class="s1">'stage'</span><span class="p">]</span>
+            <span class="p">},</span>
+</pre></div><br></div>
+                        
+                            <p class="postedit"><em class="posteditmessage">Last edited by JGames101 (Oct. 23, 2017 01:25:09)</em></p>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                <div style="text-align:center;"><br>Hey! I like working with Scratch 3.<br><br><a href="https://scratch.mit.edu/discuss/topic/289503/">Scratch 3 Modding</a><br><br><a href="https://jgames101.github.io/">My Website</a><br></div>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2865362" class="blockpost roweven firstpost">
+        <a name="post-2865362"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#7</span><a href="https://scratch.mit.edu/discuss/post/2865362/">Oct. 23, 2017 01:16:03</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/JGames101/">JGames101</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/JGames101/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/15804964_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							100+ posts
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html"><blockquote><p class="bb-quote-author">aqmoreira wrote:</p>Hi NitroCipher,<br><br>I'm playing with scratch 3 and found this post. Can you tell me where I can find more information to make a Command button that in the arguments values ​​come from a menu or array.<br><br>Samples: <br><pre class="blocks"><div class="scratchblocks"><svg version="1.1" width="116" height="25"><defs><filter id="bevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputBevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputDarkFilter" x0="-50%" y0="-50%" width="200%" height="200%"><feflood result="flood-1" in="undefined" flood-color="#000" flood-opacity="0.2"></feflood><fecomposite result="comp-2" operator="in" in="flood-1" in2="SourceAlpha"></fecomposite><femerge result="merge-3"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-2"></femergenode></femerge></filter><path d="M1.504 21L0 19.493 4.567 0h1.948l-.5 2.418s1.002-.502 3.006 0c2.006.503 3.008 2.01 6.517 2.01 3.508 0 4.463-.545 4.463-.545l-.823 9.892s-2.137 1.005-5.144.696c-3.007-.307-3.007-2.007-6.014-2.51-3.008-.502-4.512.503-4.512.503L1.504 21z" fill="#3f8d15" id="greenFlag"></path><path d="M6.724 0C3.01 0 0 2.91 0 6.5c0 2.316 1.253 4.35 3.14 5.5H5.17v-1.256C3.364 10.126 2.07 8.46 2.07 6.5 2.07 4.015 4.152 2 6.723 2c1.14 0 2.184.396 2.993 1.053L8.31 4.13c-.45.344-.398.826.11 1.08L15 8.5 13.858.992c-.083-.547-.514-.714-.963-.37l-1.532 1.172A6.825 6.825 0 0 0 6.723 0z" fill="#fff" id="turnRight"></path><path d="M3.637 1.794A6.825 6.825 0 0 1 8.277 0C11.99 0 15 2.91 15 6.5c0 2.316-1.253 4.35-3.14 5.5H9.83v-1.256c1.808-.618 3.103-2.285 3.103-4.244 0-2.485-2.083-4.5-4.654-4.5-1.14 0-2.184.396-2.993 1.053L6.69 4.13c.45.344.398.826-.11 1.08L0 8.5 1.142.992c.083-.547.514-.714.963-.37l1.532 1.172z" fill="#fff" id="turnLeft"></path><path d="M0 0L4 4L0 8Z" fill="#111" id="addInput"></path><path d="M4 0L4 8L0 4Z" fill="#111" id="delInput"></path><g id="loopArrow"><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#000" opacity="0.3"></path><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#fff" opacity="0.9" transform="translate(-1 -1)"></path></g></defs><g><g transform="translate(0 0)"><g transform="translate(2 0)"><path d="M 0 3 L 3 0 L 13 0 L 16 3 L 24 3 L 27 0 L 109 0 L 112 3 L 112 19 L 109 22 L 27 22 L 24 25 L 16 25 L 13 22 L 3 22 L 0 19 Z" class="sb-motion sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(6 5)">point</text><text x="0" y="10" class="sb-label " transform="translate(37 5)">towards</text><g transform="translate(82 4)"><g width="24" height="14" class="sb-input sb-input-dropdown"><rect x="0" y="0" width="24" height="14" class="sb-motion sb-darker"></rect></g><text x="0" y="10" class="sb-label sb-literal-dropdown" transform="translate(4 0)"></text><polygon points="7 0 3.5 4 0 0" fill="#000" opacity="0.6" transform="translate(14 5)"></polygon></g></g></g></g></svg></div></pre><br><br>Thanks,<br><br>Allan Moreira</blockquote>Here's the menu stuff I found:<br><div class="code"><pre><span class="c1">// Optional: define extension-specific menus here.</span>
+        <span class="nx">menus</span><span class="o">:</span> <span class="p">{</span>
+            <span class="c1">// Required: an identifier for this menu, unique within this extension.</span>
+            <span class="nx">menuA</span><span class="o">:</span> <span class="p">[</span>
+                <span class="c1">// Static menu: list items which should appear in the menu.</span>
+                <span class="p">{</span>
+                    <span class="c1">// Required: the value of the menu item when it is chosen.</span>
+                    <span class="nx">value</span><span class="o">:</span> <span class="s1">'itemId1'</span><span class="p">,</span>
+                    <span class="c1">// Optional: the human-readable label for this item.</span>
+                    <span class="c1">// Use `value` as the text if this is absent.</span>
+                    <span class="nx">text</span><span class="o">:</span> <span class="s1">'Item One'</span>
+                <span class="p">},</span>
+                <span class="c1">// The simplest form of a list item is a string which will be used as</span>
+                <span class="c1">// both value and text.</span>
+                <span class="s1">'itemId2'</span>
+            <span class="p">],</span>
+            <span class="c1">// Dynamic menu: a string naming a function which returns an array as above.</span>
+            <span class="c1">// Called each time the menu is opened.</span>
+            <span class="nx">menuB</span><span class="o">:</span> <span class="s1">'getItemsForMenuB'</span>
+        <span class="p">},</span>
+</pre></div></div>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                <div style="text-align:center;"><br>Hey! I like working with Scratch 3.<br><br><a href="https://scratch.mit.edu/discuss/topic/289503/">Scratch 3 Modding</a><br><br><a href="https://jgames101.github.io/">My Website</a><br></div>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2870999" class="blockpost roweven firstpost">
+        <a name="post-2870999"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#8</span><a href="https://scratch.mit.edu/discuss/post/2870999/">Oct. 27, 2017 22:00:04</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/AmazingMech2418/">AmazingMech2418</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/AmazingMech2418/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/19030691_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							500+ posts
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html">I actually found stuff like this on the Scratch 3.0 source code extension example. How do you add an extension to a project in Scratch 3?</div>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                <pre class="blocks"><div class="scratchblocks"><svg version="1.1" width="380" height="124"><defs><filter id="bevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputBevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputDarkFilter" x0="-50%" y0="-50%" width="200%" height="200%"><feflood result="flood-1" in="undefined" flood-color="#000" flood-opacity="0.2"></feflood><fecomposite result="comp-2" operator="in" in="flood-1" in2="SourceAlpha"></fecomposite><femerge result="merge-3"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-2"></femergenode></femerge></filter><path d="M1.504 21L0 19.493 4.567 0h1.948l-.5 2.418s1.002-.502 3.006 0c2.006.503 3.008 2.01 6.517 2.01 3.508 0 4.463-.545 4.463-.545l-.823 9.892s-2.137 1.005-5.144.696c-3.007-.307-3.007-2.007-6.014-2.51-3.008-.502-4.512.503-4.512.503L1.504 21z" fill="#3f8d15" id="greenFlag"></path><path d="M6.724 0C3.01 0 0 2.91 0 6.5c0 2.316 1.253 4.35 3.14 5.5H5.17v-1.256C3.364 10.126 2.07 8.46 2.07 6.5 2.07 4.015 4.152 2 6.723 2c1.14 0 2.184.396 2.993 1.053L8.31 4.13c-.45.344-.398.826.11 1.08L15 8.5 13.858.992c-.083-.547-.514-.714-.963-.37l-1.532 1.172A6.825 6.825 0 0 0 6.723 0z" fill="#fff" id="turnRight"></path><path d="M3.637 1.794A6.825 6.825 0 0 1 8.277 0C11.99 0 15 2.91 15 6.5c0 2.316-1.253 4.35-3.14 5.5H9.83v-1.256c1.808-.618 3.103-2.285 3.103-4.244 0-2.485-2.083-4.5-4.654-4.5-1.14 0-2.184.396-2.993 1.053L6.69 4.13c.45.344.398.826-.11 1.08L0 8.5 1.142.992c.083-.547.514-.714.963-.37l1.532 1.172z" fill="#fff" id="turnLeft"></path><path d="M0 0L4 4L0 8Z" fill="#111" id="addInput"></path><path d="M4 0L4 8L0 4Z" fill="#111" id="delInput"></path><g id="loopArrow"><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#000" opacity="0.3"></path><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#fff" opacity="0.9" transform="translate(-1 -1)"></path></g></defs><g><g transform="translate(0 0)"><g transform="translate(2 0)"><path d="M 0 3 L 3 0 L 13 0 L 16 3 L 24 3 L 27 0 L 129 0 L 132 3 L 132 19 L 129 22 L 27 22 L 24 25 L 16 25 L 13 22 L 3 22 L 0 19 Z" class="sb-variables sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(6 5)">set</text><g transform="translate(30 4)"><g width="53" height="14" class="sb-input sb-input-dropdown"><rect x="0" y="0" width="53" height="14" class="sb-variables sb-darker"></rect></g><text x="0" y="10" class="sb-label sb-literal-dropdown" transform="translate(4 0)">variable</text><polygon points="7 0 3.5 4 0 0" fill="#000" opacity="0.6" transform="translate(43 5)"></polygon></g><text x="0" y="10" class="sb-label " transform="translate(87 5)">to</text><g transform="translate(102 4)"><rect x="0" y="0" width="24" height="14" class="sb-input sb-input-string"></rect><text x="0" y="10" class="sb-label sb-literal-string" transform="translate(4 0)">true</text></g></g><g transform="translate(2 22)"><path d="M 0 3 L 3 0 L 13 0 L 16 3 L 24 3 L 27 0 L 373 0 L 376 3 L 376 28 L 373 31 L 42 31 L 39 34 L 31 34 L 28 31 L 17 31 L 15 33 L 15 51 L 17 53 L 373 53 L 376 56 L 376 66 L 373 69 L 27 69 L 24 72 L 16 72 L 13 69 L 3 69 L 0 66" class="sb-control sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(6 9)">if</text><g transform="translate(30 2)"><path d="M 13 0 L 300 0 313 13 L 313 13 300 26 L 13 26 0 13 L 0 13 13 0 Z" class="sb-operators sb-bevel"></path><g transform="translate(5 2)"><path d="M 10.5 0 L 214.5 0 225 10.5 L 225 10.5 214.5 21 L 10.5 21 0 10.5 L 0 10.5 10.5 0 Z" class="sb-sensing sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(11 4)">I</text><text x="0" y="10" class="sb-label " transform="translate(20 4)">finally</text><text x="0" y="10" class="sb-label " transform="translate(55 4)">learned</text><text x="0" y="10" class="sb-label " transform="translate(96 4)">how</text><text x="0" y="10" class="sb-label " transform="translate(122 4)">to</text><text x="0" y="10" class="sb-label " transform="translate(137 4)">do</text><text x="0" y="10" class="sb-label " transform="translate(155 4)">a</text><text x="0" y="10" class="sb-label " transform="translate(167 4)">signature</text></g><text x="0" y="10" class="sb-label " transform="translate(234 6)">=</text><g transform="translate(246 2)"><path d="M 10.5 0 L 51.5 0 62 10.5 L 62 10.5 51.5 21 L 10.5 21 0 10.5 L 0 10.5 10.5 0 Z" class="sb-variables sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(11 4)">variable</text></g></g><text x="0" y="10" class="sb-label " transform="translate(347 9)">then</text><g transform="translate(15 31)"><g transform="translate(0 0)"><path d="M 0 3 L 3 0 L 13 0 L 16 3 L 24 3 L 27 0 L 148 0 L 151 3 L 151 19 L 148 22 L 27 22 L 24 25 L 16 25 L 13 22 L 3 22 L 0 19 Z" class="sb-variables sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(6 5)">set</text><g transform="translate(30 4)"><g width="58" height="14" class="sb-input sb-input-dropdown"><rect x="0" y="0" width="58" height="14" class="sb-variables sb-darker"></rect></g><text x="0" y="10" class="sb-label sb-literal-dropdown" transform="translate(4 0)">response</text><polygon points="7 0 3.5 4 0 0" fill="#000" opacity="0.6" transform="translate(48 5)"></polygon></g><text x="0" y="10" class="sb-label " transform="translate(92 5)">to</text><g transform="translate(107 4)"><rect x="0" y="0" width="38" height="14" class="sb-input sb-input-string"></rect><text x="0" y="10" class="sb-label sb-literal-string" transform="translate(4 0)">YES!!!!!</text></g></g></g></g><g transform="translate(2 91)"><path d="M 0 3 L 3 0 L 13 0 L 16 3 L 24 3 L 27 0 L 194 0 L 197 3 L 197 27 L 194 30 L 27 30 L 24 33 L 16 33 L 13 30 L 3 30 L 0 27 Z" class="sb-looks sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(6 9)">say</text><g transform="translate(30 4)"><path d="M 0 3 L 3 0 L 13 0 L 16 3 L 24 3 L 27 0 L 37 0 L 40 3 L 40 19 L 37 22 L 27 22 L 24 25 L 16 25 L 13 22 L 3 22 L 0 19 Z" class="sb-looks sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(6 5)">show</text></g><text x="0" y="10" class="sb-label " transform="translate(74 9)">for</text><g transform="translate(93 3)"><path d="M 0 3 L 3 0 L 13 0 L 16 3 L 24 3 L 27 0 L 66 0 L 69 3 L 69 21 L 66 24 L 3 24 L 0 21 Z" class="sb-control sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(6 7)">stop</text><g transform="translate(33 6)"><g width="30" height="14" class="sb-input sb-input-dropdown"><rect x="0" y="0" width="30" height="14" class="sb-control sb-darker"></rect></g><text x="0" y="10" class="sb-label sb-literal-dropdown" transform="translate(4 0)">all</text><polygon points="7 0 3.5 4 0 0" fill="#000" opacity="0.6" transform="translate(20 5)"></polygon></g></g><text x="0" y="10" class="sb-label " transform="translate(166 9)">secs</text></g></g></g></svg></div></pre>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2871155" class="blockpost roweven firstpost">
+        <a name="post-2871155"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#9</span><a href="https://scratch.mit.edu/discuss/post/2871155/">Oct. 27, 2017 23:56:28</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/NitroCipher/">NitroCipher</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/NitroCipher/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/9981676_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							500+ posts
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html"><blockquote><p class="bb-quote-author">AmazingMech2418 wrote:</p>I actually found stuff like this on the Scratch 3.0 source code extension example. How do you add an extension to a project in Scratch 3?</blockquote><br>I have yet to figure out how to do it any other way than putting the code into a fork of scratch 3.0 on github</div>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                I hope my post helped you in some way!  <span class="bb-bold"><span class="bb-small">Post count: 400+</span></span><br><br><pre class="blocks"><div class="scratchblocks"><svg version="1.1" width="591" height="25"><defs><filter id="bevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputBevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputDarkFilter" x0="-50%" y0="-50%" width="200%" height="200%"><feflood result="flood-1" in="undefined" flood-color="#000" flood-opacity="0.2"></feflood><fecomposite result="comp-2" operator="in" in="flood-1" in2="SourceAlpha"></fecomposite><femerge result="merge-3"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-2"></femergenode></femerge></filter><path d="M1.504 21L0 19.493 4.567 0h1.948l-.5 2.418s1.002-.502 3.006 0c2.006.503 3.008 2.01 6.517 2.01 3.508 0 4.463-.545 4.463-.545l-.823 9.892s-2.137 1.005-5.144.696c-3.007-.307-3.007-2.007-6.014-2.51-3.008-.502-4.512.503-4.512.503L1.504 21z" fill="#3f8d15" id="greenFlag"></path><path d="M6.724 0C3.01 0 0 2.91 0 6.5c0 2.316 1.253 4.35 3.14 5.5H5.17v-1.256C3.364 10.126 2.07 8.46 2.07 6.5 2.07 4.015 4.152 2 6.723 2c1.14 0 2.184.396 2.993 1.053L8.31 4.13c-.45.344-.398.826.11 1.08L15 8.5 13.858.992c-.083-.547-.514-.714-.963-.37l-1.532 1.172A6.825 6.825 0 0 0 6.723 0z" fill="#fff" id="turnRight"></path><path d="M3.637 1.794A6.825 6.825 0 0 1 8.277 0C11.99 0 15 2.91 15 6.5c0 2.316-1.253 4.35-3.14 5.5H9.83v-1.256c1.808-.618 3.103-2.285 3.103-4.244 0-2.485-2.083-4.5-4.654-4.5-1.14 0-2.184.396-2.993 1.053L6.69 4.13c.45.344.398.826-.11 1.08L0 8.5 1.142.992c.083-.547.514-.714.963-.37l1.532 1.172z" fill="#fff" id="turnLeft"></path><path d="M0 0L4 4L0 8Z" fill="#111" id="addInput"></path><path d="M4 0L4 8L0 4Z" fill="#111" id="delInput"></path><g id="loopArrow"><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#000" opacity="0.3"></path><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#fff" opacity="0.9" transform="translate(-1 -1)"></path></g></defs><g><g transform="translate(0 0)"><g transform="translate(2 0)"><path d="M 0 3 L 3 0 L 13 0 L 16 3 L 24 3 L 27 0 L 296 0 L 299 3 L 299 19 L 296 22 L 27 22 L 24 25 L 16 25 L 13 22 L 3 22 L 0 19 Z" class="sb-extension sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(6 5)">Current</text><text x="0" y="10" class="sb-label " transform="translate(49 5)">project:</text><g transform="translate(91 4)"><rect x="0" y="0" width="202" height="14" class="sb-input sb-input-string"></rect><text x="0" y="10" class="sb-label sb-literal-string" transform="translate(4 0)">s3Blocks: scratchblocks rewritten for Scratch 3.0</text></g></g><g transform="translate(313 1)"><rect x="0" y="0" width="12" height="2" class="sb-comment-line" transform="translate(-12 9)"></rect><path d="M 6 0 L 268 0 A 6 6 0 0 1 274 6 L 274 14 A 6 6 0 0 1 268 20 L 6 20 A 6 6 0 0 1 0 14 L 0 6 A 6 6 0 0 1 6 0 Z" class="sb-comment"></path><text x="0" y="10" class="sb-label sb-comment-label" transform="translate(8 4)">https://scratch.mit.edu/discuss/topic/290031/</text></g></g></g></svg></div></pre><span class="bb-small"><span class="bb-small"><span style="color:#ffffff">This is my signature identifier “aWFtbml0cm9jaXBoZXI=”</span></span></span><br><span class="bb-italic"></span>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2889581" class="blockpost roweven firstpost">
+        <a name="post-2889581"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#10</span><a href="https://scratch.mit.edu/discuss/post/2889581/">Nov. 13, 2017 21:54:47</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/JGames101/">JGames101</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/JGames101/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/15804964_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							100+ posts
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html">I am working on porting my extensions to Scratch 3 with the new format. Do you know where the actual used extension files are stored? Not the examples, but where the actual extension file is?</div>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                <div style="text-align:center;"><br>Hey! I like working with Scratch 3.<br><br><a href="https://scratch.mit.edu/discuss/topic/289503/">Scratch 3 Modding</a><br><br><a href="https://jgames101.github.io/">My Website</a><br></div>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2905666" class="blockpost roweven firstpost">
+        <a name="post-2905666"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#11</span><a href="https://scratch.mit.edu/discuss/post/2905666/">Nov. 28, 2017 15:41:54</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/PullJosh/">PullJosh</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/PullJosh/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/907223_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							1000+ posts
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html"><blockquote><p class="bb-quote-author">JGames101 wrote:</p>I am working on porting my extensions to Scratch 3 with the new format. Do you know where the actual used extension files are stored? Not the examples, but where the actual extension file is?</blockquote>Not <span class="bb-italic">entirely</span> sure what you're tying to ask, but this might be of interest: <a href="https://github.com/LLK/scratch-vm/tree/develop/src/extensions">https://github.com/LLK/scratch-vm/tree/develop/src/extensions</a></div>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                Base 10 is the best number system.
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2946754" class="blockpost roweven firstpost">
+        <a name="post-2946754"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#12</span><a href="https://scratch.mit.edu/discuss/post/2946754/">Jan. 4, 2018 04:05:44</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/JGames101-Tutorials/">JGames101-Tutorials</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/JGames101-Tutorials/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/17484757_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							70  posts
+							
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html"><blockquote><p class="bb-quote-author">PullJosh wrote:</p><blockquote><p class="bb-quote-author">JGames101 wrote:</p>I am working on porting my extensions to Scratch 3 with the new format. Do you know where the actual used extension files are stored? Not the examples, but where the actual extension file is?</blockquote>Not <span class="bb-italic">entirely</span> sure what you're tying to ask, but this might be of interest: <a href="https://github.com/LLK/scratch-vm/tree/develop/src/extensions">https://github.com/LLK/scratch-vm/tree/develop/src/extensions</a></blockquote>That's exactly what I was looking for, thanks <img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/smile.png"></div>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                <a href="https://scratch.mit.edu/users/JGames101/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/15804964_32x32.png"></a><br>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2952344" class="blockpost roweven firstpost">
+        <a name="post-2952344"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#13</span><a href="https://scratch.mit.edu/discuss/post/2952344/">Jan. 8, 2018 16:28:06</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/NitroCipher/">NitroCipher</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/NitroCipher/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/9981676_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							500+ posts
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html">Thx for the sticky!</div>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                I hope my post helped you in some way!  <span class="bb-bold"><span class="bb-small">Post count: 400+</span></span><br><br><pre class="blocks"><div class="scratchblocks"><svg version="1.1" width="591" height="25"><defs><filter id="bevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputBevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputDarkFilter" x0="-50%" y0="-50%" width="200%" height="200%"><feflood result="flood-1" in="undefined" flood-color="#000" flood-opacity="0.2"></feflood><fecomposite result="comp-2" operator="in" in="flood-1" in2="SourceAlpha"></fecomposite><femerge result="merge-3"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-2"></femergenode></femerge></filter><path d="M1.504 21L0 19.493 4.567 0h1.948l-.5 2.418s1.002-.502 3.006 0c2.006.503 3.008 2.01 6.517 2.01 3.508 0 4.463-.545 4.463-.545l-.823 9.892s-2.137 1.005-5.144.696c-3.007-.307-3.007-2.007-6.014-2.51-3.008-.502-4.512.503-4.512.503L1.504 21z" fill="#3f8d15" id="greenFlag"></path><path d="M6.724 0C3.01 0 0 2.91 0 6.5c0 2.316 1.253 4.35 3.14 5.5H5.17v-1.256C3.364 10.126 2.07 8.46 2.07 6.5 2.07 4.015 4.152 2 6.723 2c1.14 0 2.184.396 2.993 1.053L8.31 4.13c-.45.344-.398.826.11 1.08L15 8.5 13.858.992c-.083-.547-.514-.714-.963-.37l-1.532 1.172A6.825 6.825 0 0 0 6.723 0z" fill="#fff" id="turnRight"></path><path d="M3.637 1.794A6.825 6.825 0 0 1 8.277 0C11.99 0 15 2.91 15 6.5c0 2.316-1.253 4.35-3.14 5.5H9.83v-1.256c1.808-.618 3.103-2.285 3.103-4.244 0-2.485-2.083-4.5-4.654-4.5-1.14 0-2.184.396-2.993 1.053L6.69 4.13c.45.344.398.826-.11 1.08L0 8.5 1.142.992c.083-.547.514-.714.963-.37l1.532 1.172z" fill="#fff" id="turnLeft"></path><path d="M0 0L4 4L0 8Z" fill="#111" id="addInput"></path><path d="M4 0L4 8L0 4Z" fill="#111" id="delInput"></path><g id="loopArrow"><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#000" opacity="0.3"></path><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#fff" opacity="0.9" transform="translate(-1 -1)"></path></g></defs><g><g transform="translate(0 0)"><g transform="translate(2 0)"><path d="M 0 3 L 3 0 L 13 0 L 16 3 L 24 3 L 27 0 L 296 0 L 299 3 L 299 19 L 296 22 L 27 22 L 24 25 L 16 25 L 13 22 L 3 22 L 0 19 Z" class="sb-extension sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(6 5)">Current</text><text x="0" y="10" class="sb-label " transform="translate(49 5)">project:</text><g transform="translate(91 4)"><rect x="0" y="0" width="202" height="14" class="sb-input sb-input-string"></rect><text x="0" y="10" class="sb-label sb-literal-string" transform="translate(4 0)">s3Blocks: scratchblocks rewritten for Scratch 3.0</text></g></g><g transform="translate(313 1)"><rect x="0" y="0" width="12" height="2" class="sb-comment-line" transform="translate(-12 9)"></rect><path d="M 6 0 L 268 0 A 6 6 0 0 1 274 6 L 274 14 A 6 6 0 0 1 268 20 L 6 20 A 6 6 0 0 1 0 14 L 0 6 A 6 6 0 0 1 6 0 Z" class="sb-comment"></path><text x="0" y="10" class="sb-label sb-comment-label" transform="translate(8 4)">https://scratch.mit.edu/discuss/topic/290031/</text></g></g></g></svg></div></pre><span class="bb-small"><span class="bb-small"><span style="color:#ffffff">This is my signature identifier “aWFtbml0cm9jaXBoZXI=”</span></span></span><br><span class="bb-italic"></span>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2957532" class="blockpost roweven firstpost">
+        <a name="post-2957532"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#14</span><a href="https://scratch.mit.edu/discuss/post/2957532/">Jan. 13, 2018 21:46:09</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/JGames101/">JGames101</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/JGames101/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/15804964_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							100+ posts
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html">I have managed to port one of my extension to Scratch 3 (the blocks don't completely work yet, but I'm working on that, but they do load)<br><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/OfagX4.png"><br>I followed the instructions to download the latest version of the scratch gui to work on it. I then copied the example extension, and rewrote my notifications extension in that format. Then, I uploaded it to github. I found the file that controls the list of extensions in the extensions button, and added mine. I set the URL to my github file, and it loaded in, and as you can see, the blocks appeared.<br><br>Official instructions for developing Scratch 3 extensions will be coming sometime between now and August (Scratch 3 release), according to <a href="https://scratch.mit.edu/preview-faq">The FAQ</a>.<br><br><span class="bb-bold">Update:</span> I have everything working, except asking for notification permission. For some reason, that doesn't work.<br>Code can be found at <a href="https://github.com/JGames101/scratch-extensions/blob/master/notifications/3.js">https://github.com/JGames101/scratch-extensions/blob/master/notifications/3.js</a><br><br>To test your extension, add it to the index.js file located here: <a href="https://github.com/LLK/scratch-gui/tree/develop/src/lib/libraries/extensions">https://github.com/LLK/scratch-gui/tree/develop/src/lib/libraries/extensions</a><br>You can use actual URLs.<br>Then, if you open the page, you should see an extra Extension under the extensions popup thing. Clicking it will add your extension to the project, and you can test it.<br><br>So… testing your extensions currently requires downloading the source for scratch 3's GUI. No parts, like the VM or Renderer, are needed to be changed to test extensions, despite where default scratch extensions are stored (I went through the process of forking the VM for nothing…)<br><br>I will be making some simple demo extensions, that you'll be able to see below, and then I'll publish a fork of Scratch-GUI with some sample extensions.</div>
+                        
+                            <p class="postedit"><em class="posteditmessage">Last edited by JGames101 (Jan. 13, 2018 22:10:54)</em></p>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                <div style="text-align:center;"><br>Hey! I like working with Scratch 3.<br><br><a href="https://scratch.mit.edu/discuss/topic/289503/">Scratch 3 Modding</a><br><br><a href="https://jgames101.github.io/">My Website</a><br></div>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2957689" class="blockpost roweven firstpost">
+        <a name="post-2957689"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#15</span><a href="https://scratch.mit.edu/discuss/post/2957689/">Jan. 13, 2018 23:45:22</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/NitroCipher/">NitroCipher</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/NitroCipher/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/9981676_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							500+ posts
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html"><blockquote><p class="bb-quote-author">JGames101 wrote:</p>I have managed to port one of my extension to Scratch 3 (the blocks don't completely work yet, but I'm working on that, but they do load)<br><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/OfagX4.png"><br>I followed the instructions to download the latest version of the scratch gui to work on it. I then copied the example extension, and rewrote my notifications extension in that format. Then, I uploaded it to github. I found the file that controls the list of extensions in the extensions button, and added mine. I set the URL to my github file, and it loaded in, and as you can see, the blocks appeared.<br><br>Official instructions for developing Scratch 3 extensions will be coming sometime between now and August (Scratch 3 release), according to <a href="https://scratch.mit.edu/preview-faq">The FAQ</a>.<br><br><span class="bb-bold">Update:</span> I have everything working, except asking for notification permission. For some reason, that doesn't work.<br>Code can be found at <a href="https://github.com/JGames101/scratch-extensions/blob/master/notifications/3.js">https://github.com/JGames101/scratch-extensions/blob/master/notifications/3.js</a><br><br>To test your extension, add it to the index.js file located here: <a href="https://github.com/LLK/scratch-gui/tree/develop/src/lib/libraries/extensions">https://github.com/LLK/scratch-gui/tree/develop/src/lib/libraries/extensions</a><br>You can use actual URLs.<br>Then, if you open the page, you should see an extra Extension under the extensions popup thing. Clicking it will add your extension to the project, and you can test it.<br><br>So… testing your extensions currently requires downloading the source for scratch 3's GUI. No parts, like the VM or Renderer, are needed to be changed to test extensions, despite where default scratch extensions are stored (I went through the process of forking the VM for nothing…)<br><br>I will be making some simple demo extensions, that you'll be able to see below, and then I'll publish a fork of Scratch-GUI with some sample extensions.</blockquote><br>Cool, which format do you find easier to use? Personally I like the old format, mainly because I am more used to it, and I haven't played with the new one much.</div>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                I hope my post helped you in some way!  <span class="bb-bold"><span class="bb-small">Post count: 400+</span></span><br><br><pre class="blocks"><div class="scratchblocks"><svg version="1.1" width="591" height="25"><defs><filter id="bevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputBevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputDarkFilter" x0="-50%" y0="-50%" width="200%" height="200%"><feflood result="flood-1" in="undefined" flood-color="#000" flood-opacity="0.2"></feflood><fecomposite result="comp-2" operator="in" in="flood-1" in2="SourceAlpha"></fecomposite><femerge result="merge-3"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-2"></femergenode></femerge></filter><path d="M1.504 21L0 19.493 4.567 0h1.948l-.5 2.418s1.002-.502 3.006 0c2.006.503 3.008 2.01 6.517 2.01 3.508 0 4.463-.545 4.463-.545l-.823 9.892s-2.137 1.005-5.144.696c-3.007-.307-3.007-2.007-6.014-2.51-3.008-.502-4.512.503-4.512.503L1.504 21z" fill="#3f8d15" id="greenFlag"></path><path d="M6.724 0C3.01 0 0 2.91 0 6.5c0 2.316 1.253 4.35 3.14 5.5H5.17v-1.256C3.364 10.126 2.07 8.46 2.07 6.5 2.07 4.015 4.152 2 6.723 2c1.14 0 2.184.396 2.993 1.053L8.31 4.13c-.45.344-.398.826.11 1.08L15 8.5 13.858.992c-.083-.547-.514-.714-.963-.37l-1.532 1.172A6.825 6.825 0 0 0 6.723 0z" fill="#fff" id="turnRight"></path><path d="M3.637 1.794A6.825 6.825 0 0 1 8.277 0C11.99 0 15 2.91 15 6.5c0 2.316-1.253 4.35-3.14 5.5H9.83v-1.256c1.808-.618 3.103-2.285 3.103-4.244 0-2.485-2.083-4.5-4.654-4.5-1.14 0-2.184.396-2.993 1.053L6.69 4.13c.45.344.398.826-.11 1.08L0 8.5 1.142.992c.083-.547.514-.714.963-.37l1.532 1.172z" fill="#fff" id="turnLeft"></path><path d="M0 0L4 4L0 8Z" fill="#111" id="addInput"></path><path d="M4 0L4 8L0 4Z" fill="#111" id="delInput"></path><g id="loopArrow"><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#000" opacity="0.3"></path><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#fff" opacity="0.9" transform="translate(-1 -1)"></path></g></defs><g><g transform="translate(0 0)"><g transform="translate(2 0)"><path d="M 0 3 L 3 0 L 13 0 L 16 3 L 24 3 L 27 0 L 296 0 L 299 3 L 299 19 L 296 22 L 27 22 L 24 25 L 16 25 L 13 22 L 3 22 L 0 19 Z" class="sb-extension sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(6 5)">Current</text><text x="0" y="10" class="sb-label " transform="translate(49 5)">project:</text><g transform="translate(91 4)"><rect x="0" y="0" width="202" height="14" class="sb-input sb-input-string"></rect><text x="0" y="10" class="sb-label sb-literal-string" transform="translate(4 0)">s3Blocks: scratchblocks rewritten for Scratch 3.0</text></g></g><g transform="translate(313 1)"><rect x="0" y="0" width="12" height="2" class="sb-comment-line" transform="translate(-12 9)"></rect><path d="M 6 0 L 268 0 A 6 6 0 0 1 274 6 L 274 14 A 6 6 0 0 1 268 20 L 6 20 A 6 6 0 0 1 0 14 L 0 6 A 6 6 0 0 1 6 0 Z" class="sb-comment"></path><text x="0" y="10" class="sb-label sb-comment-label" transform="translate(8 4)">https://scratch.mit.edu/discuss/topic/290031/</text></g></g></g></svg></div></pre><span class="bb-small"><span class="bb-small"><span style="color:#ffffff">This is my signature identifier “aWFtbml0cm9jaXBoZXI=”</span></span></span><br><span class="bb-italic"></span>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2957835" class="blockpost roweven firstpost">
+        <a name="post-2957835"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#16</span><a href="https://scratch.mit.edu/discuss/post/2957835/">Jan. 14, 2018 01:45:37</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/JGames101/">JGames101</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/JGames101/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/15804964_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							100+ posts
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html"><blockquote><p class="bb-quote-author">NitroCipher wrote:</p><blockquote><p class="bb-quote-author">JGames101 wrote:</p>I have managed to port one of my extension to Scratch 3 (the blocks don't completely work yet, but I'm working on that, but they do load)<br><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/OfagX4.png"><br>I followed the instructions to download the latest version of the scratch gui to work on it. I then copied the example extension, and rewrote my notifications extension in that format. Then, I uploaded it to github. I found the file that controls the list of extensions in the extensions button, and added mine. I set the URL to my github file, and it loaded in, and as you can see, the blocks appeared.<br><br>Official instructions for developing Scratch 3 extensions will be coming sometime between now and August (Scratch 3 release), according to <a href="https://scratch.mit.edu/preview-faq">The FAQ</a>.<br><br><span class="bb-bold">Update:</span> I have everything working, except asking for notification permission. For some reason, that doesn't work.<br>Code can be found at <a href="https://github.com/JGames101/scratch-extensions/blob/master/notifications/3.js">https://github.com/JGames101/scratch-extensions/blob/master/notifications/3.js</a><br><br>To test your extension, add it to the index.js file located here: <a href="https://github.com/LLK/scratch-gui/tree/develop/src/lib/libraries/extensions">https://github.com/LLK/scratch-gui/tree/develop/src/lib/libraries/extensions</a><br>You can use actual URLs.<br>Then, if you open the page, you should see an extra Extension under the extensions popup thing. Clicking it will add your extension to the project, and you can test it.<br><br>So… testing your extensions currently requires downloading the source for scratch 3's GUI. No parts, like the VM or Renderer, are needed to be changed to test extensions, despite where default scratch extensions are stored (I went through the process of forking the VM for nothing…)<br><br>I will be making some simple demo extensions, that you'll be able to see below, and then I'll publish a fork of Scratch-GUI with some sample extensions.</blockquote><br>Cool, which format do you find easier to use? Personally I like the old format, mainly because I am more used to it, and I haven't played with the new one much.</blockquote>I think that this one will be easier for people who have never made extensions before, but I think I personally prefer the older one. I don't mind the new one, though, and it has some nice new features.</div>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                <div style="text-align:center;"><br>Hey! I like working with Scratch 3.<br><br><a href="https://scratch.mit.edu/discuss/topic/289503/">Scratch 3 Modding</a><br><br><a href="https://jgames101.github.io/">My Website</a><br></div>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2977261" class="blockpost roweven firstpost">
+        <a name="post-2977261"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#17</span><a href="https://scratch.mit.edu/discuss/post/2977261/">Jan. 30, 2018 23:38:32</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/edbotinschools/">edbotinschools</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/edbotinschools/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/20860140_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							3  posts
+							
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html">Hi.<br>I currently have an HTTP extension in Scratch 2. Any ideas how I can convert this to Scratch 3??<br>Thanks.<br>C</div>
+                        
+                        
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2977494" class="blockpost roweven firstpost">
+        <a name="post-2977494"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#18</span><a href="https://scratch.mit.edu/discuss/post/2977494/">Jan. 31, 2018 04:32:12</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/NitroCipher/">NitroCipher</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/NitroCipher/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/9981676_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							500+ posts
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html"><blockquote><p class="bb-quote-author">edbotinschools wrote:</p>Hi.<br>I currently have an HTTP extension in Scratch 2. Any ideas how I can convert this to Scratch 3??<br>Thanks.<br>C</blockquote><br>Hi!  Can you put the extension up on github?  I'd be happy to take a look at it!<br><br><span style="color:#dddddd"><span class="bb-small">(I am not entirely familiar with HTTP extensions, I mainly focus on javascript)</span></span></div>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                I hope my post helped you in some way!  <span class="bb-bold"><span class="bb-small">Post count: 400+</span></span><br><br><pre class="blocks"><div class="scratchblocks"><svg version="1.1" width="591" height="25"><defs><filter id="bevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputBevelFilter" x0="-50%" y0="-50%" width="200%" height="200%"><fegaussianblur result="blur-1" in="SourceAlpha" stdDeviation="1 1"></fegaussianblur><feflood result="flood-2" in="undefined" flood-color="#fff" flood-opacity="0.15"></feflood><feoffset result="offset-3" in="blur-1" dx="-1" dy="-1"></feoffset><fecomposite result="comp-4" operator="arithmetic" in="SourceAlpha" in2="offset-3" k2="1" k3="-1"></fecomposite><fecomposite result="comp-5" operator="in" in="flood-2" in2="comp-4"></fecomposite><feflood result="flood-6" in="undefined" flood-color="#000" flood-opacity="0.7"></feflood><feoffset result="offset-7" in="blur-1" dx="1" dy="1"></feoffset><fecomposite result="comp-8" operator="arithmetic" in="SourceAlpha" in2="offset-7" k2="1" k3="-1"></fecomposite><fecomposite result="comp-9" operator="in" in="flood-6" in2="comp-8"></fecomposite><femerge result="merge-10"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-5"></femergenode><femergenode in="comp-9"></femergenode></femerge></filter><filter id="inputDarkFilter" x0="-50%" y0="-50%" width="200%" height="200%"><feflood result="flood-1" in="undefined" flood-color="#000" flood-opacity="0.2"></feflood><fecomposite result="comp-2" operator="in" in="flood-1" in2="SourceAlpha"></fecomposite><femerge result="merge-3"><femergenode in="SourceGraphic"></femergenode><femergenode in="comp-2"></femergenode></femerge></filter><path d="M1.504 21L0 19.493 4.567 0h1.948l-.5 2.418s1.002-.502 3.006 0c2.006.503 3.008 2.01 6.517 2.01 3.508 0 4.463-.545 4.463-.545l-.823 9.892s-2.137 1.005-5.144.696c-3.007-.307-3.007-2.007-6.014-2.51-3.008-.502-4.512.503-4.512.503L1.504 21z" fill="#3f8d15" id="greenFlag"></path><path d="M6.724 0C3.01 0 0 2.91 0 6.5c0 2.316 1.253 4.35 3.14 5.5H5.17v-1.256C3.364 10.126 2.07 8.46 2.07 6.5 2.07 4.015 4.152 2 6.723 2c1.14 0 2.184.396 2.993 1.053L8.31 4.13c-.45.344-.398.826.11 1.08L15 8.5 13.858.992c-.083-.547-.514-.714-.963-.37l-1.532 1.172A6.825 6.825 0 0 0 6.723 0z" fill="#fff" id="turnRight"></path><path d="M3.637 1.794A6.825 6.825 0 0 1 8.277 0C11.99 0 15 2.91 15 6.5c0 2.316-1.253 4.35-3.14 5.5H9.83v-1.256c1.808-.618 3.103-2.285 3.103-4.244 0-2.485-2.083-4.5-4.654-4.5-1.14 0-2.184.396-2.993 1.053L6.69 4.13c.45.344.398.826-.11 1.08L0 8.5 1.142.992c.083-.547.514-.714.963-.37l1.532 1.172z" fill="#fff" id="turnLeft"></path><path d="M0 0L4 4L0 8Z" fill="#111" id="addInput"></path><path d="M4 0L4 8L0 4Z" fill="#111" id="delInput"></path><g id="loopArrow"><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#000" opacity="0.3"></path><path d="M8 0l2 -2l0 -3l3 0l-4 -5l-4 5l3 0l0 3l-8 0l0 2" fill="#fff" opacity="0.9" transform="translate(-1 -1)"></path></g></defs><g><g transform="translate(0 0)"><g transform="translate(2 0)"><path d="M 0 3 L 3 0 L 13 0 L 16 3 L 24 3 L 27 0 L 296 0 L 299 3 L 299 19 L 296 22 L 27 22 L 24 25 L 16 25 L 13 22 L 3 22 L 0 19 Z" class="sb-extension sb-bevel"></path><text x="0" y="10" class="sb-label " transform="translate(6 5)">Current</text><text x="0" y="10" class="sb-label " transform="translate(49 5)">project:</text><g transform="translate(91 4)"><rect x="0" y="0" width="202" height="14" class="sb-input sb-input-string"></rect><text x="0" y="10" class="sb-label sb-literal-string" transform="translate(4 0)">s3Blocks: scratchblocks rewritten for Scratch 3.0</text></g></g><g transform="translate(313 1)"><rect x="0" y="0" width="12" height="2" class="sb-comment-line" transform="translate(-12 9)"></rect><path d="M 6 0 L 268 0 A 6 6 0 0 1 274 6 L 274 14 A 6 6 0 0 1 268 20 L 6 20 A 6 6 0 0 1 0 14 L 0 6 A 6 6 0 0 1 6 0 Z" class="sb-comment"></path><text x="0" y="10" class="sb-label sb-comment-label" transform="translate(8 4)">https://scratch.mit.edu/discuss/topic/290031/</text></g></g></g></svg></div></pre><span class="bb-small"><span class="bb-small"><span style="color:#ffffff">This is my signature identifier “aWFtbml0cm9jaXBoZXI=”</span></span></span><br><span class="bb-italic"></span>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p2977780" class="blockpost roweven firstpost">
+        <a name="post-2977780"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#19</span><a href="https://scratch.mit.edu/discuss/post/2977780/">Jan. 31, 2018 13:40:06</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/CoolGamesNet/">CoolGamesNet</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/CoolGamesNet/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/16937685_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							9  posts
+							
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html">NitroCipher,<br>I am not the originator but I just started with the Roland Go:Keys 61 extension added to Ver.1.21 firmware.<br><br><span>https://rolandcom.github.io/gokeys-scratch-extension/res/gokeys_block.jpg</span><br><br><span>https://www.roland.com/us/products/gokeys_go-61k/downloads/</span><br>and<br><span>https://rolandcom.github.io/gokeys-scratch-extension/</span><br><br>I am <span>https://github.com/CoolGames</span> or here as Developer at CoolGames dot net<br><br>Please help as I am using Ubuntu Studio 17.10 Linux and have the offline editor localhost working as much I can<br>with out Node.JS or NPM skills.<br>I would like to test the existing and rewritten extension and communicate with Roland for this effort.<br><br>Lee T. Davy<br>Retired and still working for our children's future !<br></div>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                New to ScratchX first in January 2018 and now in April 2018 watching for Scratch 3.0 offline editor release.<br>Want to do MIDI music on Roland Go Keys 61k currently in ScratchX.
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p3026676" class="blockpost roweven firstpost">
+        <a name="post-3026676"></a>
+
+        <div class="box">
+            <div class="box-head">
+                <span class="conr">#20</span><a href="https://scratch.mit.edu/discuss/post/3026676/">March 15, 2018 20:47:57</a>
+            </div>
+            <div class="box-content">
+                <div class="postleft">
+                    <dl>
+                        <dt><a class="black username" href="https://scratch.mit.edu/users/discoverypark/">discoverypark</a></dt>
+                        
+                        <dd class="postavatar">
+                            <a href="https://scratch.mit.edu/users/discoverypark/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/26931377_90x90.png" width="90" height="90"></a>
+                        </dd>
+						
+						Scratcher
+						
+						<br>
+						
+							29  posts
+							
+						
+						
+                        
+
+                        
+                    </dl>
+                </div>
+                <div class="postright">
+                    <h3>Creating extensions for Scratch 3.0</h3>
+                    <div class="postmsg">
+                        <div class="post_body_html">How about if you could make your own extensions? (in scratch 3.0)</div>
+                        
+                            <p class="postedit"><em class="posteditmessage">Last edited by discoverypark (March 15, 2018 20:48:34)</em></p>
+                        
+                        
+                            
+                            <div class="postsignature">
+                                <hr>
+                                
+                                <a href="https://scratch.mit.edu/users/discoverypark/">My Scratch Profile</a><br><a href="https://www.amazon.com/gp/profile/amzn1.account.AGNKYO4PG6IVQZ4XZDE3MEBTHLDA?ie=UTF8&amp;ref=hud_2_gw_profile">My Amazon Profile</a><br><a href="https://soundcloud.com/user-758016686">My SoundCloud Profile</a><br><a href="https://scratchstats.cf/discoverypark">My Stats</a><br>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="postfootleft">
+                </div>
+                <div class="postfootright">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="linksb">
+
+    
+
+<div class="pagination">
+    
+        <span class="disabled prev">‹‹ previous</span>
+    
+    
+        
+            
+                <span class="current page">1</span>
+            
+        
+    
+        
+            
+                <a href="https://scratch.mit.edu/discuss/topic/277217/?page=2" class="page">2</a>
+            
+        
+    
+        
+            
+                <a href="https://scratch.mit.edu/discuss/topic/277217/?page=3" class="page">3</a>
+            
+        
+    
+        
+            
+                <a href="https://scratch.mit.edu/discuss/topic/277217/?page=4" class="page">4</a>
+            
+        
+    
+    
+        <a href="https://scratch.mit.edu/discuss/topic/277217/?page=2" class="next">next ››</a>
+    
+</div>
+
+
+
+    <ul>
+        <li><a href="https://scratch.mit.edu/discuss/">Discussion Forums</a></li>
+        <li>» <a href="https://scratch.mit.edu/discuss/48/">Developing Scratch Extensions</a> </li>
+        <li>
+            » Creating extensions for Scratch 3.0 <a href="https://scratch.mit.edu/discuss/feeds/topic/277217/"><img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/feed-icon-small.png" alt="[RSS Feed]" title="[RSS Feed]" class="breadcrumb_rss"></a>
+        </li>
+    </ul>
+
+    
+        <div class="follow-topic bottom">
+            <img src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/ajax-loader.gif" class="loading" style="display: none;" alt="loading...">
+            <p class="error" style="display: none;">There was an error :( Try again?</p>
+            <form method="post" action="https://scratch.mit.edu/discuss/subscription/topic/277217/add/">
+                <input type="hidden" name="csrfmiddlewaretoken" value="PGzYXKwkq4AzmXtNoYTQdJ27rfaGjZZp">
+                <button type="submit" class="follow-button button blue" title="">Follow Discussion</button>
+            </form>
+            <form method="post" action="https://scratch.mit.edu/discuss/subscription/topic/277217/delete/">
+                <input type="hidden" name="csrfmiddlewaretoken" value="PGzYXKwkq4AzmXtNoYTQdJ27rfaGjZZp">
+                <button type="submit" style="display: none;" class="unfollow-button button grey" title="Stop getting messages about new posts to this discussion">Unfollow Discussion</button>
+            </form>
+        </div>
+    
+
+    <div class="clearer"></div>
+</div>
+
+
+
+
+    <div id="brdfooter" class="box">
+        <div class="box-content">
+            
+<div class="conl">
+    
+    
+    
+</div>
+
+            <p class="foot conr">Powered by <a href="http://djangobb.org/">DjangoBB</a></p>
+            
+                <p class="foot">
+                <strong>Standard</strong> | <a href="https://scratch.mit.edu/discuss/m/topic/277217/">Mobile</a>
+                </p>
+            
+            <div class="clearer"></div>
+        </div>
+    </div>
+</div>
+</div>
+
+        </div>
+
+
+        
+        
+    </div>
+    <div id="footer">
+      <div class="container">
+        <style>
+          #footer ul.footer-col li {
+            list-style-type:none;
+            display: inline-block;
+            width: 184px;
+            text-align: left;
+            vertical-align: top;
+          }
+
+          #footer ul.footer-col li h4 {
+            font-weight: bold;
+            font-size: 14px;
+            color: #666;
+          }
+
+        </style>
+        <ul class="clearfix footer-col">
+          <li>
+            <h4>About</h4>
+            <ul>
+              <li><a href="https://scratch.mit.edu/about/">About Scratch</a></li>
+              <li><a href="https://scratch.mit.edu/parents/">For Parents</a></li>
+              <li><a href="https://scratch.mit.edu/educators/">For Educators</a></li>
+              <li><a href="https://scratch.mit.edu/developers">For Developers</a></li>
+              <li><a href="https://scratch.mit.edu/info/credits/">Credits</a></li>
+              <li><a href="https://scratch.mit.edu/jobs/">Jobs</a></li>
+              <li><a href="https://www.scratchfoundation.org/media-kit/">Press</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>Community</h4>
+            <ul>
+              <li><a href="https://scratch.mit.edu/community_guidelines/">Community Guidelines</a></li>
+              <li><a href="https://scratch.mit.edu/discuss/">Discussion Forums</a></li>
+              <li><a href="http://wiki.scratch.mit.edu/">Scratch Wiki</a></li>
+              <li><a href="https://scratch.mit.edu/statistics/">Statistics</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>Support</h4>
+            <ul>
+              <li><a href="https://scratch.mit.edu/tips">Tips</a></li>
+              <li><a href="https://scratch.mit.edu/info/faq/">FAQ</a></li>
+              <li><a href="https://scratch.mit.edu/download">Offline Editor</a></li>
+              <li><a href="https://scratch.mit.edu/contact-us/">Contact Us</a></li>
+              <li><a href="https://scratch.mit.edu/store">Scratch Store</a></li>
+              <li><a href="https://secure.donationpay.org/scratchfoundation/">Donate</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="https://scratch.mit.edu/terms_of_use/">Terms of Use</a></li>
+              <li><a href="https://scratch.mit.edu/privacy_policy/">Privacy Policy</a></li>
+              <li><a href="https://scratch.mit.edu/DMCA/">DMCA</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>Scratch Family</h4>
+            <ul>
+              <li><a href="http://scratched.gse.harvard.edu/">ScratchEd</a></li>
+              <li><a href="http://www.scratchjr.org/">ScratchJr</a></li>
+              <li><a href="http://day.scratch.mit.edu/">Scratch Day</a></li>
+              <li><a href="https://scratch.mit.edu/conference/">Scratch Conference</a></li>
+              <li><a href="http://www.scratchfoundation.org/">Scratch Foundation</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="clearfix" id="footer-menu">
+          <li>
+            <form id="lang-dropdown" method="post" action="https://scratch.mit.edu/i18n/setlang/">
+              <select id="language-selection" name="language">
+              
+                <option value="ab">Аҧсшәа</option>
+              
+                <option value="ar">العربية</option>
+              
+                <option value="an">Aragonés</option>
+              
+                <option value="ast">Asturianu</option>
+              
+                <option value="id">Bahasa Indonesia</option>
+              
+                <option value="ms">Bahasa Melayu</option>
+              
+                <option value="be">Беларуская</option>
+              
+                <option value="bg">Български</option>
+              
+                <option value="ca">Català</option>
+              
+                <option value="cs">Česky</option>
+              
+                <option value="cy">Cymraeg</option>
+              
+                <option value="da">Dansk</option>
+              
+                <option value="de">Deutsch</option>
+              
+                <option value="yum">Edible Scratch</option>
+              
+                <option value="et">Eesti</option>
+              
+                <option value="el">Ελληνικά</option>
+              
+                <option value="en" selected="">English</option>
+              
+                <option value="eo">Esperanto</option>
+              
+                <option value="es">Español</option>
+              
+                <option value="eu">Euskara</option>
+              
+                <option value="fa">فارسی</option>
+              
+                <option value="fr">Français</option>
+              
+                <option value="fur">Furlan</option>
+              
+                <option value="ga">Gaeilge</option>
+              
+                <option value="gd">Gàidhlig</option>
+              
+                <option value="gl">Galego</option>
+              
+                <option value="ko">한국어</option>
+              
+                <option value="hy">Հայերեն</option>
+              
+                <option value="he">עִבְרִית</option>
+              
+                <option value="hi">हिन्दी</option>
+              
+                <option value="hr">Hrvatski</option>
+              
+                <option value="zu">isiZulu</option>
+              
+                <option value="is">Íslenska</option>
+              
+                <option value="it">Italiano</option>
+              
+                <option value="kn">ಭಾಷೆ-ಹೆಸರು</option>
+              
+                <option value="kk">Қазақша</option>
+              
+                <option value="rw">Kinyarwanda</option>
+              
+                <option value="ht">Kreyòl</option>
+              
+                <option value="ku">Kurdî</option>
+              
+                <option value="la">Latina</option>
+              
+                <option value="lv">Latviešu</option>
+              
+                <option value="lt">Lietuvių</option>
+              
+                <option value="mk">Македонски</option>
+              
+                <option value="hu">Magyar</option>
+              
+                <option value="ml">മലയാളം</option>
+              
+                <option value="mt">Malti</option>
+              
+                <option value="mr">मराठी</option>
+              
+                <option value="cat">Meow</option>
+              
+                <option value="mn">Монгол хэл</option>
+              
+                <option value="my">မြန်မာဘာသာ</option>
+              
+                <option value="nl">Nederlands</option>
+              
+                <option value="ja">日本語</option>
+              
+                <option value="ja-hr">にほんご</option>
+              
+                <option value="nb">Norsk Bokmål</option>
+              
+                <option value="nn">Norsk Nynorsk</option>
+              
+                <option value="uz">Oʻzbekcha</option>
+              
+                <option value="th">ไทย</option>
+              
+                <option value="pl">Polski</option>
+              
+                <option value="pt">Português</option>
+              
+                <option value="pt-br">Português Brasileiro</option>
+              
+                <option value="ro">Română</option>
+              
+                <option value="ru">Русский</option>
+              
+                <option value="sc">Sardu</option>
+              
+                <option value="sq">Shqip</option>
+              
+                <option value="sk">Slovenčina</option>
+              
+                <option value="sl">Slovenščina</option>
+              
+                <option value="sr">Српски</option>
+              
+                <option value="fi">Suomi</option>
+              
+                <option value="sv">Svenska</option>
+              
+                <option value="te">తెలుగు</option>
+              
+                <option value="nai">Tepehuan</option>
+              
+                <option value="vi">Tiếng Việt</option>
+              
+                <option value="tr">Türkçe</option>
+              
+                <option value="uk">Українська</option>
+              
+                <option value="zh-cn">简体中文</option>
+              
+                <option value="zh-tw">正體中文</option>
+              
+              </select>
+            </form>
+          </li>
+        </ul>
+        <p>Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab</p>
+      </div>
+    </div>
+    
+
+    
+<!-- templates/modal-login.html block -->
+	    <div class="modal hide fade in" id="login-dialog" style="width: 450px">
+        <form method="post" action="https://scratch.mit.edu/login/">
+          <fieldset>
+            <div class="modal-header">
+              <a href="https://scratch.mit.edu/discuss/topic/277217/?page=1#" data-dismiss="modal" class="close">x
+              </a>
+	      <h3>Sign in</h3>
+            </div>
+            <div class="modal-body">
+            
+              <div class="control-group">
+		      <label class="control-label" for="username">Username
+                </label>
+                <div class="controls">
+                  <input class="username" type="text" name="username" maxlength="30" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;);">
+                </div>
+              </div>
+              <div class="control-group">
+		            <label class="control-label" for="password">Password
+                </label>
+                <div class="controls">
+                  <input type="password" name="password" class="password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;);">
+                </div>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <span class="error">
+              </span>
+              <div class="buttons-right">
+                <button class="button primary" type="submit">Sign in</button> 
+                
+		<a data-control="registration">Or Join Scratch</a>
+                
+              </div>
+            </div>
+           
+          </fieldset>
+        </form>
+        <iframe class="iframeshim" frameborder="0" scrolling="no" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/saved_resource(1).html"><html><head></head><body></body></html></iframe>
+      </div>
+<!-- end templates/modal-login.html -->
+
+    
+        <div id="registration" class="registration modal hide fade" data-backdrop="static">
+          <iframe class="iframeshim" frameborder="0" scrolling="no" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/saved_resource(2).html"><html><head></head><body></body></html></iframe>
+        </div>
+    
+
+    
+    
+
+    
+    
+
+    <script type="text/javascript" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/main.js" charset="utf-8"></script>
+
+  
+  <script type="text/javascript">
+    // load gaq script
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+    <script type="text/javascript" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/base.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/lazyload.js" charset="utf-8"></script>
+    
+    <script type="text/javascript">
+                var STATIC_URL = "//cdn.scratch.mit.edu/scratchr2/static/__650bcb4a1188252b4cb93cd3acf827d7__/";
+                var MEDIA_URL = "//uploads.scratch.mit.edu/";
+                var POST_PREVIEW_URL = "/discuss/preview/";
+    </script>
+
+    <script type="text/javascript" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/scratchblocks.js"></script><svg version="1.1" width="1" height="1" class="sb-measure" style="visibility: hidden; position: absolute; top: -1px; left: -1px; width: 1px; height: 1px; overflow: hidden; pointer-events: none;"></svg>
+    <script type="text/javascript" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/translations.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    (function ($) {
+        scratchblocks._currentLanguage = 'en';
+
+        var forum_langs = {13: "de", 14: "es", 15: "fr", 16: "zh_CN", 17: "pl",
+            18: "ja", 19: "nl", 20: "pt", 21: "it", 22: "he", 23: "ko", 24: "nb",
+            25: "tr", 26: "el", 27: "ru", 33: "ca", 36: "id"};
+
+        function match_path(path) {
+            return new RegExp("^/discuss/([0-9]+)/").exec(path);
+        }
+
+        var match = match_path(window.location.pathname);
+        if (!match) {
+            var links = $(".linkst ul a");
+            for (var i=0; i<links.length; i++) {
+                match = match_path($(links[i]).attr("href"));
+                if (match) break;
+            }
+        }
+        scratchblocks._currentLanguages = ['en'];
+        if (match) {
+          var forum_id = parseInt(match[1]);
+          var code = forum_langs[forum_id];
+
+          if (code in scratchblocks.allLanguages) {
+              scratchblocks._currentLanguages = ['en', code];
+          }
+        }
+    })(jQuery);
+    </script>
+    
+    
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+      scratchblocks.renderMatching('pre.blocks', {
+        languages: scratchblocks._currentLanguages,
+        replace: function(el, svg, doc, options) {
+          // add scratchblocks to `el`
+          scratchblocks.replace(el, svg, doc, options);
+        },
+      });
+    });
+    </script>
+
+    <!-- Highlightjs goodies -->
+
+    
+
+  <script type="text/javascript" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/jquery.cookie.js"></script>
+  <script type="text/javascript" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/forums.js"></script>
+
+    
+
+    
+    
+
+
+<script type="text/template" id="template-collection-count">
+  <%- count %>
+</script>
+
+<script type="text/template" id="template-comment-actions">
+<% if (can_delete) { %>
+  <% if (is_staff && comment_user == current_user) { %>
+    <span data-control="delete" class="actions report">Delete</span>
+  <% } else if (type != "gallery" || comment_user == current_user) { %>
+    <span data-control="delete" class="actions report">Delete</span>
+  <% } %>
+<% } %>
+<% if (current_user != comment_user) { %>
+  <span data-control="report" class="actions report">
+  <% if (student_of_educator) { %>
+    Delete
+  <% } else { %>
+    Report
+  <% } %></span>
+<% } %>
+</script>
+
+<script type="text/template" id="template-modal-login">
+<div class="modal hide fade in" id="login-dialog" style="width: 450px">
+  <form method="post" action="/login/">
+    <fieldset>
+      <div class="modal-header">
+        <a href="#" data-dismiss="modal" class="close">x
+        </a>
+        <h3>Login</h3>
+      </div>
+      <div class="modal-body">
+        <div class="control-group">
+        <label class="control-label" for="username">Username
+          </label>
+          <div class="controls">
+            <input id="username" type="text" name="username" maxlength="30" />
+          </div>
+        </div>
+        <div class="control-group">
+        <label class="control-label" for="password">Password
+          </label>
+          <div class="controls">
+            <input type="password" name="password" id="password" />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span class="error">
+        </span>
+        <span class="button primary" id="sign-in" data-control="site-login">
+        <span>{% trans "Sign in" $}
+          </span>
+        </span>
+      </div>
+    </fieldset>
+  </form>
+</div>
+</script>
+
+<script type="text/template" id="template-comment-reply">
+  <form>
+    <div class="control-group tooltip right">
+      <textarea name="content"></textarea>
+      
+      <span class="hovertext error" data-control="error" data-content="comment-error"><span class="arrow"></span><span class="text"></span></span>
+      <span class="small-text">You have <span id="chars-left-<%- comment_id %>">500</span> characters left.</span>
+    </div>
+    <div class="control-group">
+        <div class="button small" data-parent-thread="<%- thread_id %>" data-commentee-id="<%- commentee_id %>" data-control="modal-login"><a href="#null">Post</a></div>
+        <div class="button small grey" data-control="cancel"><a href="#null">Cancel</a></div>
+      <span class="notification"></span>
+    </div>
+  </form>
+</script>
+
+<script type="text/template" id="template-deletion-canceled">
+<div class="deletion-canceled">
+  <div class="form">
+    <p>
+    Your account was scheduled for deletion but you logged in. Your account has been reactivated. If you didn’t request for your account to be deleted, you should <a href="/accounts/password_change/">change your password</a> to make sure your account is secure. 
+    </p>
+  </div>
+</div>
+</script>
+
+<script type="text/template" id="template-unsupported-browser">
+  <div class="unsupported-browser banner" data-cue="unsupported_browser">
+    <div class="container">
+      <span>Scratch works best on newer browsers. We suggest you upgrade to <a href="/info/faq/#requirements">a supported browser</a>, <a href="/scratch2download/">download the offline editor</a>, <a href="https://en.scratch-wiki.info/wiki/List_of_Bug_Workarounds">or read about common workarounds</a>.</span>
+      <div class="close">x</div>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="template-unsupported-msie">
+  <div class="unsupported-browser banner" data-cue="unsupported_browser">
+    <div class="container">
+      <span>Scratch will stop supporting Internet Explorer 8 on April 30, 2015. We suggest you upgrade to <a href="/info/faq/#requirements">a supported browser</a>, <a href="/scratch2download/">download the offline editor</a>, or <a href="https://en.scratch-wiki.info/wiki/List_of_Bug_Workarounds">read about common workarounds</a>.</span>
+      <div class="close">x</div>
+    </div>
+  </div>
+</script>
+
+
+
+
+    
+
+    
+
+    <!-- load javascript translation catalog, and javascript fuzzy date library -->
+    <script type="text/javascript" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/saved_resource"></script>
+    <script type="text/javascript" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/jquery.timeago.settings.js"></script>
+
+    
+    <script type="text/javascript" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/main(1).js"></script>
+    
+
+    <script type="text/javascript" src="./Creating extensions for Scratch 3.0 - Discuss Scratch_files/global.js"></script>
+    <script>
+      Scratch.NotificationPollTime = 300000;
+    </script>
+
+    
+
+    
+    <script>
+    $(document).on("accountnavready", function(e){
+        $('#topnav .messages').notificationsAlert();
+    });
+    </script>
+    
+  
+  <!-- Site Version: 2.2018.09.14_2018_09_14_10_18 -->
+
+</body></html>
