@@ -4,6 +4,6 @@ Early work will be focused on replicating our scratchx extension for handling da
 
 Instructions for hosting a Scratch 3.0 GUI on your local machine can be found at https://scratch.mit.edu/discuss/topic/277217.
 
-For a very basic example extension check out the helloWorld extension. This class is defined in scratch-gui/node-modules/scratch-vm/extensions/scratch3_helloWorld/index.js. You can also check out annotated_index.js in scratch-gui/.../extensions/scratch3_helloWorld/deprecated/
+For a very basic example extension check out the helloWorld extension. This class is defined in scratch-gui/node-modules/scratch-vm/src/extensions/scratch3_helloWorld/index.js. You can also check out annotated_index.js in scratch-gui/.../extensions/scratch3_helloWorld/deprecated/
 
 Our db-blocks extensions for Scratch 3 is currently under development and not part of our Scratch GUI fork. This index.js file can be found in scratch-gui/.../extensions/scratch3_db-blocks/
