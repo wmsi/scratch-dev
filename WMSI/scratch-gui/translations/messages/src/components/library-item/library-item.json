@@ -1,0 +1,7 @@
+[
+  {
+    "id": "gui.extensionLibrary.comingSoon",
+    "description": "Label for extensions that are not yet implemented",
+    "defaultMessage": "Coming Soon"
+  }
+]

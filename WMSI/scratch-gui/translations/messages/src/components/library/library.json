@@ -1,0 +1,7 @@
+[
+  {
+    "id": "gui.library.filterPlaceholder",
+    "description": "Placeholder text for library search field",
+    "defaultMessage": "Search"
+  }
+]
