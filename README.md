@@ -1,9 +1,12 @@
-Welcome to scratch-dev @ WMSI! This is where we develop Scratch 3.0 extensions in a fork of the sceratch-gui repository from LLK (github.com/LLK/scratch-gui).
+<h3>Welcome to scratch-dev @ WMSI!</h3> 
+This is where we develop Scratch 3.0 extensions in a fork of the <a href="https://github.com/LLK/scratch-gui">scratch-gui repository from LLK.</a> This repository contains clear instructions for getting scratch-gui up and running locally, and for building a version for distribution. To preview the GUI in a version similar to the one in the scratch-dev/ repository, visit <a href="https://wmsinh.org/scratch-gui">https://wmsinh.org/scratch-gui.</a>
 
-Early work will be focused on replicating our scratchx extension for handling data transactions with wmsinh.org. To check out the ScratchX extensions and some example sketches, go to deprecated/scratchx-examples. 
+<h4>WMSI Extensions</h4>
+Within the Scratch 3 application structure, all extension files are located in <a href="https://github.com/wmsi/scratch-dev/tree/master/WMSI/scratch-gui/node_modules/scratch-vm/src/extensions">scratch-vm/src/extensions.</a> Each folder in this directory contains an index.js file defining the extension class, followed by a "module.exports" line at the bottom of the file to make the extension part of the the node.js application. Each extension also needs to be listed as part of the <code>BuiltInExtensions const</code> in <a href="https://github.com/wmsi/scratch-dev/blob/master/WMSI/scratch-gui/node_modules/scratch-vm/src/extension-support/extension-manager.js">extension-manager.js.</a>
 
-Instructions for hosting a Scratch 3.0 GUI on your local machine can be found at https://scratch.mit.edu/discuss/topic/277217.
+For a very basic example extension check out the <a href="https://github.com/wmsi/scratch-dev/blob/master/WMSI/scratch-gui/node_modules/scratch-vm/src/extensions/scratch3_hello_world/index.js">helloWorld extension.</a>. This example demonstrates how to make Command and Reporter blocks, and how to set and read variables in localStorage.
 
-For a very basic example extension check out the helloWorld extension. This class is defined in scratch-gui/node-modules/scratch-vm/src/extensions/scratch3_helloWorld/index.js. You can also check out annotated_index.js in scratch-gui/.../extensions/scratch3_helloWorld/deprecated/
+The majority of our extension-development effort has been focused on the <a href="https://github.com/wmsi/scratch-dev/tree/master/WMSI/scratch-gui/node_modules/scratch-vm/src/extensions/scratch3_db_blocks">DB Blocks extension</a>, which supports Scratch 3 integration into the Digital Data Storytelling project. This extension contains blocks for pushing and pulling data from the wmsinh.org database (using XML HTTP Requests) and managing that data in localStorage. The same database content can be viewed at <a href="https://wmsinh.org/data-story">https://wmsinh.org/data-story</a>.
 
-Our db-blocks extensions for Scratch 3 is currently under development and not part of our Scratch GUI fork. This index.js file can be found in scratch-gui/.../extensions/scratch3_db-blocks/
+<h4>Project History<h4>
+This project originally focused on replicating our ScratchX extension for handling data transactions with wmsinh.org. To check out the ScratchX extensions and some example sketches, go to our <a href="https://github.com/wmsi/scratchx-examples">ScratchX repository.</a> 
