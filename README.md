@@ -8,5 +8,5 @@ For a very basic example extension check out the <a href="https://github.com/wms
 
 The majority of our extension-development effort has been focused on the <a href="https://github.com/wmsi/scratch-dev/tree/master/WMSI/scratch-gui/node_modules/scratch-vm/src/extensions/scratch3_db_blocks">DB Blocks extension</a>, which supports Scratch 3 integration into the Digital Data Storytelling project. This extension contains blocks for pushing and pulling data from the wmsinh.org database (using XML HTTP Requests) and managing that data in localStorage. The same database content can be viewed at <a href="https://wmsinh.org/data-story">https://wmsinh.org/data-story</a>.
 
-<h4>Project History<h4>
+<h4>Project History</h4>
 This project originally focused on replicating our ScratchX extension for handling data transactions with wmsinh.org. To check out the ScratchX extensions and some example sketches, go to our <a href="https://github.com/wmsi/scratchx-examples">ScratchX repository.</a> 
