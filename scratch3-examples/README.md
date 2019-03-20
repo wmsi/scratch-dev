@@ -13,7 +13,7 @@ This directory contains a variety of Scratch examples to get you started with pr
 		<a href="https://drive.google.com/open?id=1u8n1VvAHX5lODiKigd72jPljJ7F_cADP">Video</a> |
 		<a href="https://github.com/wmsi/scratch-dev/raw/master/scratch3-examples/microbit/Microbit-DB-HelloWorld.sb3">Download</a>
 	</li>
-	<li>EV3 Hello World
+	<li>EV3 Hello World:
 		<a href="https://drive.google.com/open?id=1mk1PshRdG052B9Nc0s9-dncjk7e4H6AV">Video</a> | 
 		<a href="https://github.com/wmsi/scratch-dev/raw/master/scratch3-examples/EV3/EV3-DB-HelloWorld.sb3">Download</a>
 	</li>
