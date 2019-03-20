@@ -5,8 +5,9 @@ This directory contains a variety of Scratch examples to get you started with pr
 <i>These examples require some basic knowledge of Scratch principles. If you need support getting started with this code base or you want to contribute, please email mbucchieri@whitemountainscience.org.</i>
 
 <ul>
-	<li><a target="_blank" href="https://drive.google.com/open?id=1rvEnJ7mbZBfOPXvjD73pI6R2JF2DdwXe">WeDo Hello World</a>
-		<button type="button">Download Link</button>
+	<li>WeDo Hello World: 
+		<a target="_blank" href="https://drive.google.com/open?id=1rvEnJ7mbZBfOPXvjD73pI6R2JF2DdwXe">Video</a> | 
+		<a href="https://github.com/wmsi/scratch-dev/raw/master/scratch3-examples/microbit/Microbit-WeDo_remote_catch.sb3">Download Link</a>
 	</li>
 	<li><a target="_blank" href="https://drive.google.com/open?id=1u8n1VvAHX5lODiKigd72jPljJ7F_cADP">Microbit Hello World</a></li>
 	<li><a target="_blank" href="https://drive.google.com/open?id=1mk1PshRdG052B9Nc0s9-dncjk7e4H6AV">EV3 Hello World</a></li>
