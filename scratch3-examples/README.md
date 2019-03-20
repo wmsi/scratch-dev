@@ -2,6 +2,7 @@
 <br />
 This directory contains a variety of Scratch examples to get you started with programming for EV3, WeDo, Microbit, and the WMSI Database Extension. You can download each example as a .sb3 file and upload it to the <a target="_blank" href="https://wmsi.github.io/scratch-gui">WMSI Scratch GUI</a> or click on the links below to watch a short demo video of each example. All of the "Hello World" examples show the basic functionality of one of the hardware extensions being used with the WMSI Database extension.
 <br />
+<hr>
 <i>These examples require some basic knowledge of Scratch principles. If you need support getting started with this code base or you want to contribute, please email mbucchieri@whitemountainscience.org.</i>
 
 <ul>
@@ -29,5 +30,5 @@ This directory contains a variety of Scratch examples to get you started with pr
 		<a href="https://github.com/wmsi/scratch-dev/raw/master/scratch3-examples/wedo/WeDo-Microbit_remote_catch.sb3">Download</a>
 		<ul><li>Use a WeDo to play catch with Microbit users around the world</li></ul>
 	</li>
-	
+
 </ul>
