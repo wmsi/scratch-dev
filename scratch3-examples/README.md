@@ -1,6 +1,6 @@
 <style>
 	li {
-		padding-bottom: 20px;
+		padding-bottom: 100px;
 	}
 </style>
 <h2>Scratch 3 Examples</h2>
