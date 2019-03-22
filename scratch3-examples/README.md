@@ -18,14 +18,22 @@ This directory contains a variety of Scratch examples to get you started with pr
 		<a href="https://github.com/wmsi/scratch-dev/raw/master/scratch3-examples/EV3/EV3-DB-HelloWorld.sb3">Download</a>
 	</li>
 	<li>EV3 People Counter: 
+		<a href="https://drive.google.com/open?id=1TznmQSv8MNg9oLu99sPs0XT0MPOyAtGp">Video</a> | 
 		<a href="https://github.com/wmsi/scratch-dev/raw/master/scratch3-examples/EV3/People_Counter_1hr_window.sb3">Download</a>
-		<ul><li>Create a bar chart or histogram of how many people enter a space over the course of the day.</li></ul>
+		<ul><li>Log updates of how many people pass by over the course of the day.</li></ul>
+	</li>
+	<li>EV3 Temperature Logger:
+		<a href="https://drive.google.com/open?id=1BsJUAvr5b78qWsO8HcWCNOpiw5ItjiXX">Video</a> | 
+		<a href="https://github.com/wmsi/scratch-dev/raw/master/scratch3-examples/EV3/EV3-Temp-Logger.sb3">Download</a>
+		<ul><li>Monitor temperature with the EV3 Brick and Temperature Probe and send periodic updates to the <a href="https://wmsinh.org/data-story">Data Story Page</a></li></ul>
 	</li>
 	<li>Interactive Catch (Microbit Code):
+		<a href="https://drive.google.com/open?id=1mGh3LFCBlJ-pzV2seY2AivGuKedNfKdw">Video</a> | 
 		<a href="https://github.com/wmsi/scratch-dev/raw/master/scratch3-examples/microbit/Microbit-WeDo_remote_catch.sb3">Download</a>
 		<ul><li>Use a Microbit to play catch with WeDo users around the world</li></ul>
 	</li>
 	<li>Interactive Catch (WeDo Code):
+		<a href="https://drive.google.com/open?id=12bFYfpHJMOuh0DFtRqdDwJwGm61ocmMC">Video</a> | 
 		<a href="https://github.com/wmsi/scratch-dev/raw/master/scratch3-examples/wedo/WeDo-Microbit_remote_catch.sb3">Download</a>
 		<ul><li>Use a WeDo to play catch with Microbit users around the world</li></ul>
 	</li>
