@@ -1,0 +1,6 @@
+.DS_Store
+.yotta.json
+*.swp
+build/
+yotta_modules/
+yotta_targets/

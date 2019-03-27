@@ -1,0 +1,14 @@
+{
+  "name": "scratch-microbit-firmware",
+  "version": "0.0.1",
+  "description": "Firmware for communicating with Scratch 2.0 (scratch.mit.edu)",
+  "license": "MIT",
+  "dependencies": {
+    "microbit": "lancaster-university/microbit"
+  },
+  "extraIncludes": [
+    "inc"
+  ],
+  "targetDependencies": {},
+  "bin": "./src"
+}
