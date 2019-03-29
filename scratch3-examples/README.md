@@ -27,6 +27,16 @@ This directory contains a variety of Scratch examples to get you started with pr
 		<a href="https://github.com/wmsi/scratch-dev/raw/master/scratch3-examples/EV3/EV3-Temp-Logger.sb3">Download</a>
 		<ul><li>Monitor temperature with the EV3 Brick and Temperature Probe and send periodic updates to the <a href="https://wmsinh.org/data-story">Data Story Page</a></li></ul>
 	</li>
+	<li><b>EV3 Remote Brightness Scanner: </b>
+        Video coming soon! | 
+		<a href="https://github.com/wmsi/scratch-dev/raw/master/scratch3-examples/EV3/EV3-Remote-Brightness-Scanner.sb3">Download</a>
+		<ul><li>Drives a robot with the EV3 Brick and light sensor over a pattern on the ground and records the light sensor readings to the <a href="https://wmsinh.org/data-story">Data Story Page.</a> This is used for an activity in which kids attempt to identify what letter is laid out on the ground by the recorded light sensor readings.</li></ul>
+	</li>
+	<li><b>EV3 Space Rover Remote Control: </b>
+        Video coming soon! | 
+		<a href="https://github.com/wmsi/scratch-dev/raw/master/scratch3-examples/EV3/EV3-Space-Rover-Remote-Control.sb3">Download</a>
+		<ul><li>Allows the user to drive an EV3 robot using the keyboard or a GUI. Simulates the speed of light delay inherent in space missions.</li></ul>
+	</li>
 	<li><b>Interactive Catch (Microbit Code): </b>
 		<a href="https://drive.google.com/open?id=1mGh3LFCBlJ-pzV2seY2AivGuKedNfKdw">Video</a> | 
 		<a href="https://github.com/wmsi/scratch-dev/raw/master/scratch3-examples/microbit/Microbit-WeDo_remote_catch.sb3">Download</a>
